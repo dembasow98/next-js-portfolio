@@ -20,10 +20,9 @@ const Services = () => {
             <div className="feature-box-01 media">
               <i className="icon theme-bg icon-mobile" />
               <div className="feature-content media-body">
-                <h5>Web Design</h5>
+                <h5>Web Developement</h5>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                I specialize in HTML5, CSS3, JavaScript, React.js, Express.js, Next.js, Node.js, MongoDB, Python, and Django to create exceptional websites.
                 </p>
               </div>
             </div>
@@ -32,10 +31,10 @@ const Services = () => {
             <div className="feature-box-01 media">
               <i className="icon theme-bg icon-desktop" />
               <div className="feature-content media-body">
-                <h5>Web Development</h5>
+                <h5>Machine Learning</h5>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                I develop cutting-edge machine learning algorithms using tools like scikit-learn, NumPy, pandas, and NLTK.
+                Currently I am working on a Diabetes care systems using ML algorithms with a team of 3 other people.
                 </p>
               </div>
             </div>
@@ -44,10 +43,10 @@ const Services = () => {
             <div className="feature-box-01 media">
               <i className="icon theme-bg icon-target" />
               <div className="feature-content media-body">
-                <h5>SEO Marketing</h5>
+                <h5>Artificial Intelligence</h5>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                I have passion on AI algorithms development, Previously I have had 
+                a decent amount of experience on tools including TensorFlow, PyTorch, OpenCV, NumPy, and OpenAI, enabling me to create intelligent solutions.
                 </p>
               </div>
             </div>
@@ -56,10 +55,10 @@ const Services = () => {
             <div className="feature-box-01 media">
               <i className="icon theme-bg icon-mobile" />
               <div className="feature-content media-body">
-                <h5>Web Design</h5>
+                <h5>Content Writing &  SEO</h5>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                I craft SEO-optimized website blogs to enhance your online presence and Search Engine Results Page (SERP) ranking.
+                Previously, I have written more then 40 blogs for CarCheckUp company and it has improved its overall ranking on Google.
                 </p>
               </div>
             </div>
@@ -68,10 +67,10 @@ const Services = () => {
             <div className="feature-box-01 media">
               <i className="icon theme-bg icon-desktop" />
               <div className="feature-content media-body">
-                <h5>Web Development</h5>
+                <h5>Translation</h5>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Speaking 7 languages, I have hands-on experience in translating between French-Arabic, and English-Turkish. 
+                Additionally, I provided multilingual customer service at a tourist aesthetics clinic in Istanbul, interacting with clients worldwide for 3 months.
                 </p>
               </div>
             </div>
@@ -80,10 +79,10 @@ const Services = () => {
             <div className="feature-box-01 media">
               <i className="icon theme-bg icon-target" />
               <div className="feature-content media-body">
-                <h5>SEO Marketing</h5>
+                <h5>Language Teaching</h5>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                 I currently teach english part time at Just English, to furcher boost my social skills, exhale my public speaking
+                 and help people learn a new language. Helping others is a passion of mine, and I'm always looking for new ways to do so.
                 </p>
               </div>
             </div>

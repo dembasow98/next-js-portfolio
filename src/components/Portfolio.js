@@ -4,6 +4,7 @@ const Portfolio = () => {
   // Isotope
   const isotope = useRef();
   const [filterKey, setFilterKey] = useState("*");
+
   useEffect(() => {
     isotope.current = new Isotope(".portfolio-content", {
       itemSelector: ".grid-item",
@@ -20,6 +21,7 @@ const Portfolio = () => {
     });
     return () => isotope.current.destroy();
   });
+
   useEffect(() => {
     if (isotope.current) {
       filterKey === "*"
@@ -27,10 +29,14 @@ const Portfolio = () => {
         : isotope.current.arrange({ filter: `.${filterKey}` });
     }
   }, [filterKey]);
+
   const handleFilterKeyChange = (key) => () => {
     setFilterKey(key);
   };
+
   const activeBtn = (value) => (value === filterKey ? "active" : "");
+
+  
   return (
     <section
       id="work"
