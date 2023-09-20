@@ -32,8 +32,6 @@ const TypingAnimation = () => {
           self.cursor.style.color = "#0A64BC";
         }
       },
-      
-
     });
 
     // Destropying

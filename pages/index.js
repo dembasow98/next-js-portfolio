@@ -24,17 +24,15 @@ const Index = () => {
                   <h6>Hello, I am</h6>
                   <h1 className="font-alt">DEMBA SOW</h1>
                   <p className="lead">
-                    I Am a Passionate <TypingAnimation />
+                    A Passionate <TypingAnimation />
                   </p>
                   <p className="desc">
-                    I design and develop services for customers of all sizes,
-                    specializing in creating stylish, modern websites, web
-                    services and online stores. My passion is to design digital
-                    user experiences through the bold interface and meaningful
-                    interactions. I also love to work on machine learning and
-                    AI projects. I am a Polyglot,  I speak 7 languages including Fulani, English, French,
-                    Arabic, Turkish, Portuguese, and Some Spanish.
-                    I write content for blogs and websites.
+                    I'm a recent computer engineering graduate with a strong passion for Full Stack Web Development 
+                    and some experience in Machine Learning and AI. I write website content sometime.
+                    My insatiable curiosity has driven me to learn 7 languages, 
+                    including Fulani, English, French, Arabic, Turkish, Portuguese, and some Spanish,
+                    enabling  me to connect with people from diverse cultures. I enjoy writing and, in my free time, 
+                    I teach English to further enhance my social skills and communication abilities.
                   </p>
                   <div className="btn-bar">
                     <a className="px-btn px-btn-theme" href="#">

@@ -2,33 +2,28 @@ import emailjs from "emailjs-com";
 import { useState } from "react";
 const Contact = () => {
   const [mailData, setMailData] = useState({
-    name: "",
-    email: "",
+    from_name: "",
+    from_email: "",
     subject: "",
     message: "",
   });
-  const { name, email, message, subject } = mailData;
+  const { from_name, from_email, message, subject } = mailData;
   const [error, setError] = useState(null);
   const onChange = (e) =>
     setMailData({ ...mailData, [e.target.name]: e.target.value });
   const onSubmit = (e) => {
     e.preventDefault();
     if (
-      name.length === 0 ||
-      email.length === 0 ||
+      from_name.length === 0 ||
+      from_email.length === 0 ||
       message.length === 0 ||
       subject.length === 0
     ) {
       setError(true);
       clearError();
     } else {
-      emailjs
-        .send(
-          "service_seruhwu", // service id
-          "template_21aw58z", // template id
-          mailData,
-          "Q3pccdLZhU-mZT7tQ" // public api
-        )
+
+      emailjs.send("service_y4ou7yn","template_r00mu6r",mailData,"PndVczf_E6-tIOcc9")
         .then(
           (response) => {
             setError(false);
@@ -61,23 +56,23 @@ const Contact = () => {
             <div className="contact-info">
               <h4>What’s your story? Get in touch</h4>
               <p>
-                Always available for freelancing if the right project comes
+                Always available if the right project comes
                 along, Feel free to contact me.
               </p>
               <ul>
                 <li className="media">
                   <i className="ti-map" />
                   <span className="media-body">
-                    123 Stree New York City , United States Of America 750065.
+                  Kemalpaşa Mahallesi, 704. Sk., No:1, 54050 Serdivan/Sakarya
                   </span>
                 </li>
                 <li className="media">
                   <i className="ti-email" />
-                  <span className="media-body">support@domain.com</span>
+                  <span className="media-body">dastech1998@gmail.com</span>
                 </li>
                 <li className="media">
                   <i className="ti-mobile" />
-                  <span className="media-body">+044 9696 9696 3636</span>
+                  <span className="media-body">+90 538 814 76 41</span>
                 </li>
               </ul>
             </div>
@@ -90,13 +85,13 @@ const Contact = () => {
                   <div className="col-md-6">
                     <div className="form-group">
                       <input
-                        name="name"
+                        name="from_name"
                         onChange={(e) => onChange(e)}
-                        value={name}
+                        value={from_name}
                         id="name"
                         placeholder="Name *"
                         className={`form-control ${
-                          error ? (!name ? "invalid" : "") : ""
+                          error ? (!from_name ? "invalid" : "") : ""
                         }`}
                         type="text"
                       />
@@ -105,13 +100,13 @@ const Contact = () => {
                   <div className="col-md-6">
                     <div className="form-group">
                       <input
-                        name="email"
+                        name="from_email"
                         onChange={(e) => onChange(e)}
-                        value={email}
+                        value={from_email}
                         id="email"
                         placeholder="Email *"
                         className={`form-control ${
-                          error ? (!email ? "invalid" : "") : ""
+                          error ? (!from_email ? "invalid" : "") : ""
                         }`}
                         type="email"
                       />
@@ -147,7 +142,7 @@ const Contact = () => {
                       />
                     </div>
                   </div>
-                  <div className="col-md-12">
+                  <div className="d-flex col-md-12">
                     <div className="send">
                       {/* <button
                         onSubmit={(e) => onSubmit(e)}
@@ -164,23 +159,26 @@ const Contact = () => {
                         value="send message"
                       />
                     </div>
-                    <span
-                      id="suce_message"
-                      className="text-success"
-                      style={{
-                        display:
-                          error !== null ? (!error ? "block" : "none") : "none",
-                      }}
-                    >
-                      Message Sent Successfully
-                    </span>
-                    <span
-                      id="err_message"
-                      className="text-danger"
-                      style={{ display: "none" }}
-                    >
-                      Message Sending Failed
-                    </span>
+                    <div className="d-flex mx-4 my-2">
+                     
+                      <span
+                        id="suce_message"
+                        className="text-success"
+                        style={{
+                          display:
+                            error !== null ? (!error ? "block" : "none") : "none",
+                        }}
+                      >
+                        Message Sent Successfully!!!
+                      </span>
+                      <span
+                        id="err_message"
+                        className="text-danger"
+                        style={{ display: "none" }}
+                      >
+                        Message Sending Failed
+                      </span>
+                    </div>
                   </div>
                 </div>
               </form>
@@ -189,11 +187,10 @@ const Contact = () => {
           <div className="col-12">
             <div className="google-map">
               <div className="embed-responsive embed-responsive-21by9">
-                <iframe
-                  className="embed-responsive-item"
-                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3151.840107317064!2d144.955925!3d-37.817214!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sin!4v1520156366883"
-                  allowFullScreen=""
-                />
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d11747.10911186441!2d30.33000364171304!3d40.743736650501646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssakarya%20university!5e0!3m2!1sen!2str!4v1695199501597!5m2!1sen!2str" 
+                allowFullScreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              />
               </div>
             </div>
           </div>
