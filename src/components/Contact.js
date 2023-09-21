@@ -1,5 +1,7 @@
 import emailjs from "emailjs-com";
 import { useState } from "react";
+require('dotenv').config();
+
 const Contact = () => {
   const [mailData, setMailData] = useState({
     from_name: "",
@@ -23,8 +25,8 @@ const Contact = () => {
       clearError();
     } else {
 
-      emailjs.send("service_y4ou7yn","template_r00mu6r",mailData,"PndVczf_E6-tIOcc9")
-        .then(
+      emailjs.send(process.env.NEXT_PUBLIC_SERVICE_ID,process.env.NEXT_PUBLIC_TEMPLATE_ID,mailData,process.env.NEXT_PUBLIC_PUBLIC_KEY)  
+      .then(
           (response) => {
             setError(false);
             clearError();
@@ -144,15 +146,6 @@ const Contact = () => {
                   </div>
                   <div className="d-flex col-md-12">
                     <div className="send">
-                      {/* <button
-                        onSubmit={(e) => onSubmit(e)}
-                        className="px-btn px-btn-theme"
-                        type="button"
-                        value="Send"
-                      >
-                        {" "}
-                        send message
-                      </button> */}
                       <input
                         className="px-btn px-btn-theme"
                         type="submit"
