@@ -14,7 +14,7 @@ const Header = ({ blog }) => {
         <div className="d-flex">
           <div className="navbar-brand">
             <Link href="/">
-              <a className="logo-text">Sergio</a>
+              <a className="logo-text">Demba Sow</a>
             </Link>
           </div>
           <button
@@ -38,29 +38,30 @@ const Header = ({ blog }) => {
           <div className="hl-top">
             <div className="hl-logo">
               <div className="img">
-                <img src="static/img/about-me.jpg" title="" alt="" />
+                <img src="static/img/personal/icon.png" title="Demba sow home page icon" alt="Demba Sow Full stack web developer" />
               </div>
-              <h5>Sergiobi</h5>
+              <h5>DEMBA SOW</h5>
             </div>
           </div>
           {blog ? <MenuWithBlog /> : <MenuWithOutBlog />}
         </div>
         <div className="nav justify-content-center social-icons">
-          <a href="#">
+          <a href="https://github.com/dembasow98">
+            <i className="fab fa-github" />
+          </a>
+          <a href="https://www.facebook.com/iamDembaAbdullaahiSow/">
             <i className="fab fa-facebook-f" />
           </a>
-          <a href="#">
+          <a href="https://twitter.com/dembasowfr">
             <i className="fab fa-twitter" />
           </a>
-          <a href="#">
+          <a href="https://www.instagram.com/dembasowofficial/">
             <i className="fab fa-instagram" />
           </a>
-          <a href="#">
+          <a href="https://www.linkedin.com/in/demba-sow-95903a22a/">
             <i className="fab fa-linkedin-in" />
           </a>
-          <a href="#">
-            <i className="fab fa-pinterest" />
-          </a>
+         
         </div>
       </header>
     </Fragment>
@@ -80,7 +81,7 @@ const MenuWithOutBlog = () => {
       <li data-menuanchor="about">
         <a className="nav-link" href="#about">
           <i className="ti-id-badge" />
-          <span>About Me</span>
+          <span>About</span>
         </a>
       </li>
       <li data-menuanchor="services">
@@ -104,7 +105,7 @@ const MenuWithOutBlog = () => {
       <li data-menuanchor="contactus">
         <a className="nav-link" href="#contactus">
           <i className="ti-map-alt" />
-          <span>Contact Me</span>
+          <span>Contact</span>
         </a>
       </li>
     </ul>
@@ -133,7 +134,7 @@ const MenuWithBlog = () => {
           <Link href="/#about">
             <a className="nav-link">
               <i className="ti-id-badge" />
-              <span>About Me</span>
+              <span>About</span>
             </a>
           </Link>
         </li>
@@ -165,7 +166,7 @@ const MenuWithBlog = () => {
           <Link href="/#contactus">
             <a className="nav-link">
               <i className="ti-map-alt" />
-              <span>Contact Me</span>
+              <span>Contact</span>
             </a>
           </Link>
         </li>

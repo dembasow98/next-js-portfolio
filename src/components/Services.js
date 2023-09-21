@@ -18,7 +18,7 @@ const Services = () => {
         <div className="row">
           <div className="col-sm-6 m-15px-tb">
             <div className="feature-box-01 media">
-              <i className="icon theme-bg icon-mobile" />
+            <img className="theme-bg" src="static/img/services/web-developer.png" alt="Demba Sow Full stack web developer" />
               <div className="feature-content media-body">
                 <h5>Web Developement</h5>
                 <p>
@@ -29,7 +29,8 @@ const Services = () => {
           </div>
           <div className="col-sm-6 m-15px-tb">
             <div className="feature-box-01 media">
-              <i className="icon theme-bg icon-desktop" />
+              {/* <i className="icon theme-bg icon-desktop" /> */}
+              <img className="theme-bg" src="static/img/services/machine-learning.png" alt="Demba Sow Machine Learning Developer" />
               <div className="feature-content media-body">
                 <h5>Machine Learning</h5>
                 <p>
@@ -41,7 +42,7 @@ const Services = () => {
           </div>
           <div className="col-sm-6 m-15px-tb">
             <div className="feature-box-01 media">
-              <i className="icon theme-bg icon-target" />
+            <img className="theme-bg" src="static/img/services/artificial-intelligence.png" alt="Demba Sow Artificial Intelligence Developer" />
               <div className="feature-content media-body">
                 <h5>Artificial Intelligence</h5>
                 <p>
@@ -53,7 +54,7 @@ const Services = () => {
           </div>
           <div className="col-sm-6 m-15px-tb">
             <div className="feature-box-01 media">
-              <i className="icon theme-bg icon-mobile" />
+              <img className="theme-bg" src="static/img/services/content-writer.png" alt="Demba Sow Content Writer" />
               <div className="feature-content media-body">
                 <h5>Content Writing &  SEO</h5>
                 <p>
@@ -65,7 +66,7 @@ const Services = () => {
           </div>
           <div className="col-sm-6 m-15px-tb">
             <div className="feature-box-01 media">
-              <i className="icon theme-bg icon-desktop" />
+              <img className="theme-bg" src="static/img/services/translator.png" alt="Demba Sow Translator" />
               <div className="feature-content media-body">
                 <h5>Translation</h5>
                 <p>
@@ -77,7 +78,7 @@ const Services = () => {
           </div>
           <div className="col-sm-6 m-15px-tb">
             <div className="feature-box-01 media">
-              <i className="icon theme-bg icon-target" />
+              <img className="theme-bg" src="static/img/services/language-teacher.png" alt="Demba Sow Language Teacher" />
               <div className="feature-content media-body">
                 <h5>Language Teaching</h5>
                 <p>

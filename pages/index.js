@@ -35,7 +35,8 @@ const Index = () => {
                     I teach English to further enhance my social skills and communication abilities.
                   </p>
                   <div className="btn-bar">
-                    <a className="px-btn px-btn-theme" href="#">
+                  
+                    <a className="px-btn px-btn-theme" href="resume/DEMBA-SOW_UK_FORMAT.pdf" download>
                       Donwload CV
                     </a>
                   </div>
@@ -43,7 +44,7 @@ const Index = () => {
               </div>
               <div className="col-lg-6">
                 <div className="hb-img">
-                  <img src="static/img/home-banner.png" title="" alt="" />
+                  <img src="static/img/personal/banner.png" title="" alt="" />
                 </div>
               </div>
             </div>

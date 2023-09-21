@@ -12,7 +12,7 @@ const About = () => {
             <div className="about-me">
               <div className="img">
                 <div className="img-in">
-                  <img src="static/img/about-me.png" title="" alt="" />
+                  <img src="static/img/personal/home.png" title="Demba Sow Full stack web developer" alt="Demba Sow Full stack web developer" />
                 </div>
               </div>
             </div>
@@ -38,7 +38,7 @@ const About = () => {
                 <div className="row">
                   <div className="col-auto">
                     <div className="media align-items-center">
-                      <span className="count">5k</span>
+                      <span className="count">32</span>
                       <div className="media-body">
                         Projects <br />
                         Completed.
@@ -47,7 +47,7 @@ const About = () => {
                   </div>
                   <div className="col-auto">
                     <div className="media align-items-center">
-                      <span className="count">3k</span>
+                      <span className="count">25</span>
                       <div className="media-body">
                         Satisfied <br />
                         Clients.
@@ -56,10 +56,10 @@ const About = () => {
                   </div>
                 </div>
                 <div className="btn-bar">
-                  <a className="px-btn px-btn-theme" href="#">
+                  <a className="px-btn px-btn-theme" href="#contactus">
                     <span>Contact Me</span>
                   </a>
-                  <a className="px-btn px-btn-theme" href="#">
+                  <a className="px-btn px-btn-theme" href="#work">
                     <span>Portfolio</span>
                   </a>
                 </div>
@@ -112,7 +112,7 @@ const About = () => {
               </div>
               {/* /skill */}
               <div className="skill-lt">
-                <h6>Machine Learning</h6>
+                <h6>AI & Machine Learning</h6>
                 <div className="skill-bar">
                   <div className="skill-bar-in" style={{ width: "95%" }}>
                     <span data-toggle="tooltip" title="95%" />
@@ -151,7 +151,7 @@ const About = () => {
             <div className="row">
               <div className="col-sm-3 col-md-3 col-xl-2">
                 <div className="rb-left">
-                  <img src="static/img/a1.png" title="CarCheckUp" alt="CarCheckUp UK based car report provider" />
+                  <img src="static/img/experience/carcheckup-logo.png" title="CarCheckUp" alt="CarCheckUp UK based car report provider" />
                 </div>
               </div>
               <div className="col-sm-9 col-md-9 col-xl-10">
@@ -172,7 +172,7 @@ const About = () => {
             <div className="row">
               <div className="col-sm-3 col-md-3 col-xl-2">
                 <div className="rb-left">
-                  <img src="static/img/a2.png" title="" alt="" />
+                  <img src="static/img/experience/work3-logo.png" title="Work3 teknoloji a.ş" alt="Work3 teknoloji startup şirketi sakarya university teknokent" />
                 </div>
               </div>
               <div className="col-sm-9 col-md-9 col-xl-10">
@@ -192,7 +192,7 @@ const About = () => {
             <div className="row">
               <div className="col-sm-3 col-md-3 col-xl-2">
                 <div className="rb-left">
-                  <img src="static/img/a3.png" title="" alt="" />
+                  <img src="static/img/experience/sakarya-university-logo.png" title="Sakarya University SAU" alt="Sakarya University Turkiye Public University" />
                 </div>
               </div>
               <div className="col-sm-9 col-md-9 col-xl-10">

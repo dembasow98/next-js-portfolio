@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }) {
         <title>Demba Sow - Sleepless Nights</title>
         {/* <!-- Favicon --> */}
 
-        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.png" />
         {/* <!-- plugin CSS --> */}
         <link
           href="static/plugin/bootstrap/css/bootstrap.min.css"
