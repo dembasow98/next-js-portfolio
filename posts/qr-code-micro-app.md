@@ -1,9 +1,9 @@
 ---
 title: "Building a QR code micro-app"
-subtitle: "Build a serverless 'hello-world' QR code app with Python and AWS."
+subtitle: "Build a serverless 'hello-world' QR code app with bash and AWS."
 author: "DEMBA SOW"
 date: "20 September 2023"
-banner: "/static/img/posts/qr-code-micro-app/banner.png"
+banner: "/static/img/posts/qr-code-micro-app/banner.jpg"
 comments: true
 #comment counter
 category:
@@ -28,7 +28,7 @@ Ever since the pandemic started, I've noticed QR codes creeping into my daily li
 
 I thought it'd be fun to explore the technology a little bit, so I've built a micro web-app that lets you save messages and view them later using a QR code. Sort of a "Hello World" QR code project.
 
-In this post, I'll be sharing how I built this using Python and AWS free tier.
+In this post, I'll be sharing how I built this using bash and AWS free tier.
 
 You can try out the [app itself here](https://qr.pixegami.com/). The [source code](https://github.com/pixegami/qr-code-webapp) is also available on GitHub.
 
@@ -58,54 +58,51 @@ So after breaking these requirements into technical tasks, here is the strategy:
 
 - **Author some arbitrary content**: I'll use a static React front-end to let the user write their message.
 - **Persist the content**: I'll have a serverless API (using AWS Lambda and API Gateway) for the front-end to use. It will receive the message (a string) and put it into database for storage. I'll generate a unique ID and use this as the `tag` for the object.
-- **Generate a QR Code**: I'll first come up with a URL string I want to encode into the QR image (using the `tag` I made above). Then I'll find a Python library that lets me turn this URL string into a QR image. I'll make the image accessible to the user.
+- **Generate a QR Code**: I'll first come up with a URL string I want to encode into the QR image (using the `tag` I made above). Then I'll find a bash library that lets me turn this URL string into a QR image. I'll make the image accessible to the user.
 - **Load the content**: Now I'll implement the URL endpoint that the QR code re-directs to. It will probably have the `tag` as a query parameter, so I'll just use that to look up the message in my table and send it back to the page.
 
 ### Overall Stack
 
 - **Frontend**: React (Typescript)
-- **Backend**: Python code with AWS Lambda and API Gateway
+- **Backend**: bash code with AWS Lambda and API Gateway
 - **Database**: DynamoDB
 - **Image Storage**: Amazon S3
 
 ## Implementation
 
 Most of the app's 'meaty' logic lives in the [`qr-code-infrastructure/compute/api`](https://github.com/pixegami/qr-code-webapp/tree/main/qr-code-infrastructure/compute/api) folder, as a bunch
-of Python functions.
+of bash functions.
 
 ### Generating a `tag` and a URL
 
 When a user sends a message, it generates a random tag using `uuid4` (which I truncated to 12
 characters to keep it a bit shorter). A URL to view this message will then be used to create a QR code.
 
-```python
-
-# uuid is a built-in Python library to generate random IDs with, with low chance of collision.
+```bash
 qr_id = uuid.uuid4().hex[:12]
 qr_tag = f"qr-{qr_id}"
 
-# We'll later have to implement this page so that it can load our message with the given tag.
 content = f"https://qr.pixegami.com/view?tag={qr_tag}"
 ```
 
 ### Generating the QR code image
 
-One of the things I really love about Python is how there's a library for everything. I just typed in "qr code" into PyPI and found this [library](https://pypi.org/project/qrcode/), which took a minute to install and use.
+One of the things I really love about bash is how there's a library for everything. I just typed in "qr code" into PyPI and found this [library](https://pypi.org/project/qrcode/), which took a minute to install and use.
 
 Using the `qrcode` library, I create an image. It's a one-liner.
 
-```python
+```bash
 qr_image = qrcode.make(content)
 ```
 
 But now we need to save this image somewhere. Since this function is running on AWS Lambda, we can't just [save it anywhere](https://aws.amazon.com/lambda/faqs/).
 
-> Each Lambda function receives 500MB of non-persistent disk space in its own /tmp directory.
+>Each Lambda function receives 500MB of non-persistent disk space in its own /tmp directory.
 
 This must be saved into `/tmp` folder on Lambda
 since that is the only folder that is writable (hence why we need to pass down a `path`).
 
-```python
+```bash
 image_path = os.path.join(path, f"{qr_tag}.png")
 qr_image.save(image_path)
 ```
@@ -116,7 +113,7 @@ Now in our Lambda runtime we have a `.png` file at `image_path`. We need to find
 
 Let's upload it to an [S3 bucket](https://aws.amazon.com/s3/?nc2=h_ql_prod_fs_s3).
 
-```python
+```bash
 bucket_name = os.environ["IMAGE_BUCKET_NAME"]
 key = f"{qr_result.tag}.png"
 s3client = boto3.client("s3")
@@ -126,12 +123,12 @@ s3client.upload_file(qr_result.image_path, bucket_name, key)
 I then create a [pre-signed URL](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ShareObjectPreSignedURL.html) from the bucket so that I can tell the frontend where to load the
 QR code image from.
 
-> All objects by default are private. Only the object owner has permission to access these objects. However, the object owner can optionally share objects with others by creating a presigned URL, using their own security credentials, to grant time-limited permission to download the objects.
+>All objects by default are private. Only the object owner has permission to access these objects. However, the object owner can optionally share objects with others by creating a presigned URL, using their own security credentials, to grant time-limited permission to download the objects.
 
 It expires in `3600` seconds, but that's fine because I don't need the image
 itself to be long lived.
 
-```python
+```bash
 presigned_url = s3client.generate_presigned_url(
     "get_object",
     Params={"Bucket": bucket_name, "Key": key},
@@ -149,7 +146,7 @@ Finally I need to write an entry into the [DynamoDB table](https://aws.amazon.co
 
 The only important thing to know about DynamoDB here is that it acts as a simple key-value store, and it is also serverless.
 
-```python
+```bash
 item = QrItem()
 item.pk = qr_result.tag  # This is the UUID we generated above.
 item.message = message  # This is the message body.
@@ -164,7 +161,7 @@ I [used](https://github.com/pixegami/qr-code-webapp/blob/main/qr-code-site/src/c
 
 I have another API on the back-end, which receives this `tag` and looks up the saved message. It then sends it back for the front-end to display.
 
-```python
+```bash
 serialized_item = self.database.get_item(QrItem(tag))
 item = QrItem().deserialize(serialized_item)
 message = item.message

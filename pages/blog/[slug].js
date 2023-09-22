@@ -5,12 +5,27 @@ import path from "path";
 
 import Markdown from "markdown-to-jsx";
 
+// Add this CSS to your component or a separate CSS file
+/*
+background: #000;
+color: #fafffb;
+*/
+const customStyles = `
+  .custom-code-block {
+    background: #0e0f0e;
+    color: #fafffb;
+    color: #cfd4d1;
+    padding: 1rem;
+    border-radius: 0.5rem;
+  }
+`;
 
 export default function SingleBlog ({post}){
 
   return (
   
     <Layout blog>
+      <style>{customStyles}</style>
       <div className="single-blog">
         <div className="container d-flex flex-column align-items-center">
           <div className="blog-feature-img">
@@ -133,16 +148,20 @@ export async function getStaticProps({ params }) {
   const fullPath = path.join(process.cwd(), "posts", `${slug}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const matterResult = matter(fileContents);
-
-  
+  // Replace code block markers (```language) with a custom class
+  const contentWithCustomStyles = matterResult.content.replace(
+    /```(\w+)\n([\s\S]*?)\n```/g,
+    '<pre className="custom-code-block">$2</pre>'
+  );
 
   return {
     props: {
       post: {
         slug,
         ...matterResult.data,
-        content: matterResult.content,
+        content: contentWithCustomStyles,
       },
     },
   };
+
 }

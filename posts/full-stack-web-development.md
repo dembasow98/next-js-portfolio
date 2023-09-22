@@ -62,7 +62,7 @@ Front-end development focuses on creating the user interface and user experience
 
 To create a responsive and interactive front-end, you need to understand HTML structure, CSS styling, and JavaScript for adding functionality.
 
-```html
+```bash
 <!DOCTYPE html>
 <html>
 <head>
@@ -91,7 +91,7 @@ Back-end development focuses on server-side logic, database management, and hand
 
 To create a robust back-end, you'll need to understand server programming, routing, and working with databases.
 
-``` javascript
+```bash
 //Copy code
 const express = require('express');
 const app = express();
