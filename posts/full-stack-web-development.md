@@ -43,12 +43,14 @@ In today's digital age, Full Stack Web Development has become a crucial skill fo
 
 ## What is Full Stack Web Development?
 
+![Full Stack Developer](/static/img/posts/full-stack-web-development/frontend-vs-backend.webp)
 Full Stack Web Development involves working on both the **front-end** (client-side) and the **back-end** (server-side) of a web application. A full-stack developer is responsible for building the entire web application, from designing the user interface to managing the server and database.
 
-![Full Stack Developer](insert_image_url_here)
+
 
 ## Front-End Development
 
+![Frontend Developer](/static/img/posts/full-stack-web-development/frontend-developer.jpg)
 Front-end development focuses on creating the user interface and user experience. Key technologies and languages in front-end development include:
 
 - HTML
@@ -76,6 +78,8 @@ To create a responsive and interactive front-end, you need to understand HTML st
 ```
 
 ### Back-End Development
+
+![Backend Developer](/static/img/posts/full-stack-web-development/backend-developer.jpeg)
 Back-end development focuses on server-side logic, database management, and handling requests from the front-end. Key technologies and languages in back-end development include:
 
 - Node.js

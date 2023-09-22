@@ -12,7 +12,7 @@ export default function SingleBlog ({post}){
   
     <Layout blog>
       <div className="single-blog">
-        <div className="container">
+        <div className="container d-flex flex-column align-items-center">
           <div className="blog-feature-img">
             <img src={post.banner} title={post.title} alt= {post.title} />
           </div>
