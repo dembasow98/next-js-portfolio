@@ -16,7 +16,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-const Index = ({posts}) => {
+const Index = ({posts, projects}) => {
   return (
     <Layout>
       <section
@@ -68,7 +68,7 @@ const Index = ({posts}) => {
       <Services />
       {/* End Services */}
       {/* Portfolio */}
-      <Portfolio />
+      <Portfolio projects={projects} />
       {/* End Portfolio */}
       {/* Blog */}
       <Blog posts={posts} />
@@ -80,9 +80,11 @@ const Index = ({posts}) => {
   );
 };
 
-
+// this function is called during build time to ensure that the page has all the required data to render
 export async function getStaticProps() {
-  
+
+  // get posts
+
   const postsDirectory = path.join(process.cwd(), "posts");
   const fileNames = fs.readdirSync(postsDirectory);
 
@@ -98,11 +100,33 @@ export async function getStaticProps() {
     };
   });
 
+  // get projects
+  const projectsDirectory = path.join(process.cwd(), "projects");
+  const projectFileNames = fs.readdirSync(projectsDirectory);
+
+  const projects = projectFileNames.map((fileName) => {
+    const id = fileName.replace(/\.md$/, "");
+    const fullPath = path.join(projectsDirectory, fileName);
+    const fileContents = fs.readFileSync(fullPath, "utf8");
+    const matterResult = matter(fileContents);
+
+    return {
+      id,
+      ...matterResult.data,
+    };
+  });
+
+
+  // return the data as props
   return {
     props: {
       posts,
+      projects,
     },
   };
+
 }
+
+
 
 export default Index;

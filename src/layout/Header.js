@@ -37,9 +37,11 @@ const Header = ({ blog }) => {
         <div className="scroll-bar">
           <div className="hl-top">
             <div className="hl-logo">
-              <div className="img">
-                <img src="/static/img/personal/icon.png" title="Demba sow home page icon" alt="Demba Sow Full stack web developer" />
-              </div>
+              <Link className="cursor" href="/">
+                <div className="img">
+                  <img src="/static/img/personal/icon.png" title="Demba sow home page icon" alt="Demba Sow Full stack web developer" />
+                </div>
+              </Link>
               <h5>DEMBA SOW</h5>
             </div>
           </div>
