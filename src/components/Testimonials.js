@@ -34,7 +34,10 @@ const Testimonials = () => {
       <Swiper {...props}>
         <SwiperSlide className="testimonial-01 media">
           <div className="avatar">
-            <img src="static/img/a1.png" title="" alt="" />
+            <img src="static/img/testimonials/avatar.png" 
+              title="Demba Sow - Full Stack Developer -  AI and Machine Learning Developer - Content Writer - Translator" 
+              alt="Demba Sow - Full Stack Developer -  AI and Machine Learning Developer - Content Writer - Translator" 
+            />
           </div>
           <div className="media-body">
             <p>
@@ -48,8 +51,11 @@ const Testimonials = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide className="testimonial-01 media">
-          <div className="avatar">
-            <img src="static/img/a1.png" title="" alt="" />
+          <div className="avatar theme-bg">
+            <img src="static/img/testimonials/avatar.png" 
+              title="Demba Sow - Full Stack Developer -  AI and Machine Learning Developer - Content Writer - Translator" 
+              alt="Demba Sow - Full Stack Developer -  AI and Machine Learning Developer - Content Writer - Translator" 
+            />
           </div>
           <div className="media-body">
             <p>
@@ -64,7 +70,10 @@ const Testimonials = () => {
         </SwiperSlide>
         <SwiperSlide className="testimonial-01 media">
           <div className="avatar">
-            <img src="static/img/a1.png" title="" alt="" />
+            <img src="static/img/testimonials/avatar.png" 
+              title="Demba Sow - Full Stack Developer -  AI and Machine Learning Developer - Content Writer - Translator" 
+              alt="Demba Sow - Full Stack Developer -  AI and Machine Learning Developer - Content Writer - Translator" 
+            />
           </div>
           <div className="media-body">
             <p>
@@ -78,7 +87,10 @@ const Testimonials = () => {
         </SwiperSlide>
         <SwiperSlide className="testimonial-01 media">
           <div className="avatar">
-            <img src="static/img/a1.png" title="" alt="" />
+            <img src="static/img/testimonials/avatar.png" 
+              title="Demba Sow - Full Stack Developer -  AI and Machine Learning Developer - Content Writer - Translator" 
+              alt="Demba Sow - Full Stack Developer -  AI and Machine Learning Developer - Content Writer - Translator" 
+            />
           </div>
           <div className="media-body">
             <p>
