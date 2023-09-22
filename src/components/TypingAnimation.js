@@ -7,12 +7,12 @@ const TypingAnimation = () => {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        '<span style="color: #0A64BC;">Computer Engineer 👨‍💻</span>',
-        '<span style="color: #0A64BC;">Full Stack Web Developer 🖥️</span>',
-        '<span style="color: #0A64BC;">Machine Learning Developer 🤖</span>',
-        '<span style="color: #0A64BC;">Freelancer 🌐</span>',
-        '<span style="color: #0A64BC;">Content Writer ✍️</span>',
-        '<span style="color: #0A64BC;">Polyglot 🗣️</span>'
+        '<span style="color: #2fbf71;">Computer Engineer</span>',
+        '<span style="color: #2fbf71;">Full Stack Web Developer</span>',
+        '<span style="color: #2fbf71;">Machine Learning Developer</span>',
+        '<span style="color: #2fbf71;">Freelancer</span>',
+        '<span style="color: #2fbf71;">Content Writer</span>',
+        '<span style="color: #2fbf71;">Polyglot</span>'
       ], // Strings to display #FFD700
       typeSpeed: 100,
       backSpeed: 100,
@@ -20,16 +20,16 @@ const TypingAnimation = () => {
       smartBackspace: true,
       loop: true,
       showCursor: true,
-      // Set cursor color to #0A64BC as well
+      // Set cursor color to #2fbf71 as well
       preStringTyped: (arrayPos, self) => {
         if (self) {
-          self.cursor.style.color = "#0A64BC";
+          self.cursor.style.color = "#2fbf71";
         }
       },
-      // Set cursor color to #0A64BC as well
+      // Set cursor color to #2fbf71 as well
       onStringTyped: (arrayPos, self) => {
         if (self) {
-          self.cursor.style.color = "#0A64BC";
+          self.cursor.style.color = "#2fbf71";
         }
       },
     });

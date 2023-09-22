@@ -28,11 +28,11 @@ const About = () => {
                   experience.{" "}
                 </h3>
                 <p>
-                I'm a Computer Engineer experienced in Full Stack Web Development and Machine Learning. Originally from Mauritania, 
-                I've spent 5 years in Turkey and a year in Portugal during an Erasmus exchange. I work as a freelancer specializing 
-                in web development and content writing, and I'm passionate about AI and machine learning. I speark 7 languages, 
+                {`I'm`} a Computer Engineer experienced in Full Stack Web Development and Machine Learning. Originally from Mauritania, 
+                {`I've`} spent 5 years in Turkey and a year in Portugal during an Erasmus exchange. I work as a freelancer specializing 
+                in web development and content writing, and {`I'm`} passionate about AI and machine learning. I speark 7 languages, 
                 including Fulani, English, French, Arabic, Turkish, Portuguese, and some Spanish.
-                I'm a naturally curious individual constantly seeking self-improvement. 
+                {`I'm`} a naturally curious individual constantly seeking self-improvement. 
                 My strong work ethic fuels my ambition to achieve significant goals.
                 </p>
                 <div className="row">
@@ -77,7 +77,7 @@ const About = () => {
               <li>
                 <span>2017 - 2018</span>
                 <h6>Turkiye Maarif Foundation High School - Mauritania</h6>
-                <p> Maths & Biology Degree </p>
+                <p> Maths &amp; Biology Degree </p>
               </li>
               <li>
                 <span>2019-2023</span>
@@ -86,7 +86,7 @@ const About = () => {
               </li>
               <li>
                 <span>2021-2022</span>
-                <h6>Engenharia de Computação - Erasmus+ EU Students Exchange Program</h6>
+                <h6>Computer Engineering - Erasmus+ EU Students Exchange Program</h6>
                 <p>Polytechnic Institute of Viana do Castelo - IPVC</p>
               </li>
             </ul>
@@ -178,7 +178,7 @@ const About = () => {
               <div className="col-sm-9 col-md-9 col-xl-10">
                 <div className="rb-right">
                   <h6>AI & Machine Learning Developer</h6>
-                  <label>Work3 Teknoloji a.ş | Hybrid | September 2023 - Present</label>
+                  <label>Work3 Teknoloji a.s | Hybrid | September 2023 - Present</label>
                   <div className="rb-time">Part Time</div>
                   <p>
                   Currently, I am interning as an AI and ML developer while simultaneously gaining experience in hardware development.
@@ -203,7 +203,7 @@ const About = () => {
                   <p>
                     With the help of my supervisor, and a colleague of mine, we worked on Ohara Bookshelf project that was amongst the best Final Year Projects in the Computer Engineering Department.
                     Ohara bookshelf is a smart books recommendations web application that allows users to create an account, add bookshelves to their library,
-                    fork other users' bookshelves, and get smart books recommendations based on their emotions, preferences and interests.
+                    fork other {`users`} bookshelves, and get smart books recommendations based on their emotions, preferences and interests.
                   </p>
                 </div>
               </div>

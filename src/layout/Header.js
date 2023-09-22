@@ -14,7 +14,7 @@ const Header = ({ blog }) => {
         <div className="d-flex">
           <div className="navbar-brand">
             <Link href="/">
-              <a className="logo-text">Demba Sow</a>
+              <a className="logo-text">DEMBA SOW</a>
             </Link>
           </div>
           <button
@@ -38,7 +38,7 @@ const Header = ({ blog }) => {
           <div className="hl-top">
             <div className="hl-logo">
               <div className="img">
-                <img src="static/img/personal/icon.png" title="Demba sow home page icon" alt="Demba Sow Full stack web developer" />
+                <img src="/static/img/personal/icon.png" title="Demba sow home page icon" alt="Demba Sow Full stack web developer" />
               </div>
               <h5>DEMBA SOW</h5>
             </div>
@@ -96,6 +96,7 @@ const MenuWithOutBlog = () => {
           <span>Portfolio</span>
         </a>
       </li>
+      
       <li data-menuanchor="blog" className="blog">
         <a className="nav-link" href="#blog">
           <i className="ti-layout-media-overlay-alt-2" />

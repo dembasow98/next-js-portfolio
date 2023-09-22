@@ -1,14 +1,22 @@
 import dynamic from "next/dynamic";
 import About from "../src/components/About";
-import Blog from "../src/components/Blog";
+const Blog = dynamic(() => import("../src/components/Blog"), {
+  ssr: false,
+});
 import Contact from "../src/components/Contact";
-import Services from "../src/components/Services";
+import ParticlesBackground from "../src/components/ParticlesBackground";
 import TypingAnimation from "../src/components/TypingAnimation";
+import Services from "../src/components/Services";
 import Layout from "../src/layout/Layout";
 const Portfolio = dynamic(() => import("../src/components/Portfolio"), {
   ssr: false,
 });
-const Index = () => {
+
+import fs from "fs";
+import path from "path";
+import matter from "gray-matter";
+
+const Index = ({posts}) => {
   return (
     <Layout>
       <section
@@ -17,17 +25,19 @@ const Index = () => {
         className="pp-section pp-scrollable"
       >
         <div className="home-banner">
+          {/* <div id="particles-box" className="particles" /> */}
+          <ParticlesBackground />
           <div className="container">
             <div className="row full-screen align-items-center">
               <div className="col-lg-6">
                 <div className="type-box">
-                  <h6>Hello, I am</h6>
+                  <h6>Whalecome, I am</h6>
                   <h1 className="font-alt">DEMBA SOW</h1>
                   <p className="lead">
                     A Passionate <TypingAnimation />
                   </p>
                   <p className="desc">
-                    I'm a recent computer engineering graduate with a strong passion for Full Stack Web Development 
+                    {`I'm`} a recent computer engineering graduate with a strong passion for Full Stack Web Development 
                     and some experience in Machine Learning and AI. I write website content sometime.
                     My insatiable curiosity has driven me to learn 7 languages, 
                     including Fulani, English, French, Arabic, Turkish, Portuguese, and some Spanish,
@@ -35,7 +45,6 @@ const Index = () => {
                     I teach English to further enhance my social skills and communication abilities.
                   </p>
                   <div className="btn-bar">
-                  
                     <a className="px-btn px-btn-theme" href="resume/DEMBA-SOW_UK_FORMAT.pdf" download>
                       Donwload CV
                     </a>
@@ -62,11 +71,38 @@ const Index = () => {
       <Portfolio />
       {/* End Portfolio */}
       {/* Blog */}
-      <Blog />
+      <Blog posts={posts} />
       {/* End Blog */}
       {/* Contact us */}
       <Contact />
+
     </Layout>
   );
 };
+
+
+export async function getStaticProps() {
+  
+  const postsDirectory = path.join(process.cwd(), "posts");
+  const fileNames = fs.readdirSync(postsDirectory);
+
+  const posts = fileNames.map((fileName) => {
+    const slug = fileName.replace(/\.md$/, "");
+    const fullPath = path.join(postsDirectory, fileName);
+    const fileContents = fs.readFileSync(fullPath, "utf8");
+    const matterResult = matter(fileContents);
+
+    return {
+      slug,
+      ...matterResult.data,
+    };
+  });
+
+  return {
+    props: {
+      posts,
+    },
+  };
+}
+
 export default Index;

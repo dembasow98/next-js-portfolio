@@ -83,7 +83,7 @@ const Services = () => {
                 <h5>Language Teaching</h5>
                 <p>
                  I currently teach english part time at Just English, to furcher boost my social skills, exhale my public speaking
-                 and help people learn a new language. Helping others is a passion of mine, and I'm always looking for new ways to do so.
+                 and help people learn a new language. Helping others is a passion of mine, and {`I'm`} always looking for new ways to do so.
                 </p>
               </div>
             </div>

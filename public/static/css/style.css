@@ -622,6 +622,9 @@ mark {
   padding-bottom: 100px;
   background: #10101a;
   min-height: 100%;
+  justify-content: center;
+  display: flex;
+  align-items: center;
 }
 .theme-light .single-blog {
   background: #fff;

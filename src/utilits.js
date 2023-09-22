@@ -1,3 +1,6 @@
+//import fs from 'fs';
+
+
 export const activeSection = () => {
   const path = window.location.pathname;
   window.addEventListener("scroll", () => {
@@ -50,3 +53,15 @@ export const pagination = (listClass, sort, active) => {
     }
   }
 };
+
+
+// export const getPostsMetadata = () => {
+
+//   const folder = 'posts/';
+//   const files = fs.readdirSync(folder);
+//   const markdownPosts = files.filter((file) => file.endsWith('.md'));
+//   const slugs = markdownPosts.map((file) => file.replace('.md', ''));
+
+//   return slugs
+  
+// };
