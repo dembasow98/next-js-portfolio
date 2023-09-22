@@ -155,11 +155,23 @@ Personally though, the reason I use AWS is because it's the technology I'm most 
 
 But for most of my projects, I'm going utilize technology that doesn't require a hosted server. In particular:
 
-| Service | Purpose |
-| --- | --- |
-| S3 | File storage |
-| DynamoDB | Database |
-| Lambda | Compute engine |
+|  Service |    Purpose     |
+| -------- | -------------- |
+|    S3    | File storage   |
+| DynamoDB |   Database     |
+| Lambda   | Compute engine |
+
+These services are all serverless, which means they are managed by AWS and don't require a server to be running 24/7.
+
+Example of a table with 3 columns:
+
+
+| Service   | Purpose        | Description                                   |
+| --------- | -------------- | --------------------------------------------- |
+| S3        | File storage   | Amazon S3 provides scalable object storage.   |
+| DynamoDB  | Database       | Amazon DynamoDB is a NoSQL database service.  |
+| Lambda    | Compute engine | AWS Lambda is a serverless compute service.   |
+
 
 Their on-demand pricing means the cost scales with usage. There is a [free tier](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc), and it only begins to cost money if usage exceeds a certain amount.
 

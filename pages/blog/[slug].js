@@ -2,16 +2,11 @@ import Layout from "../../src/layout/Layout";
 import matter from "gray-matter";
 import fs from "fs";
 import path from "path";
-import {unified} from 'unified'
-import remarkParse from 'remark-parse'
-import remarkHtml from 'remark-html'
 
+import Markdown from "markdown-to-jsx";
 
 
 export default function SingleBlog ({post}){
-  
-  //console.log("Post content:",post.content)
-
 
   return (
   
@@ -44,8 +39,7 @@ export default function SingleBlog ({post}){
                   </div>
                 </div>
                 <div className="article-content">
-                {renderHTML(post.content)}
-                  
+                  <Markdown>{post.content}</Markdown>
                 </div>
                 <div className="nav tag-cloud">
                   {post.keywords.map((keyword, index) => (
@@ -110,12 +104,10 @@ export default function SingleBlog ({post}){
     </Layout>
 
   );
-  };
+};
 
 
-  function renderHTML(html) {
-    return <div dangerouslySetInnerHTML={{ __html: html }} />;
-  }
+
 
 export async function getStaticPaths() {
   const postsDirectory = path.join(process.cwd(), "posts");
@@ -135,24 +127,21 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
+
   const { slug } = params;
+
   const fullPath = path.join(process.cwd(), "posts", `${slug}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const matterResult = matter(fileContents);
 
-  //Let's convert the post content from markdown to HTML
-
-  const processedContent = await unified().use(remarkParse).use(remarkHtml).process(matterResult.content);
-
-  const contentHtml = processedContent.toString()
-
+  
 
   return {
     props: {
       post: {
         slug,
         ...matterResult.data,
-        content: contentHtml,
+        content: matterResult.content,
       },
     },
   };
