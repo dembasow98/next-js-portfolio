@@ -38,11 +38,11 @@ export default function SingleProject ({project}){
 
                     <div className="d-flex flex-row gap-2 align-items-center">
                         {
-                            project?.categories && project.categories.map((category, index) => (
-                                <h6>
-                                    <a key={index} href="#">{category}</a>
-                                </h6>
-                            ))
+                          project?.categories && project.categories.map((category, index) => (
+                              <h6>
+                                  <a key={index} href="#">{category}</a>
+                              </h6>
+                          ))
                         }
                     </div>
                   
@@ -125,6 +125,8 @@ export default function SingleProject ({project}){
 
 
 export async function getStaticPaths() {
+
+  
   const projectsDirectory = path.join(process.cwd(), "projects");
   const fileNames = fs.readdirSync(projectsDirectory);
 
@@ -148,7 +150,8 @@ export async function getStaticProps({ params }) {
   const fullPath = path.join(process.cwd(), "projects", `${slug}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const matterResult = matter(fileContents);
-  // Replace code block markers (```language) with a custom class
+  
+  // Replace code block markers (```) with a custom class
   const contentWithCustomStyles = matterResult.content.replace(
     /```(\w+)\n([\s\S]*?)\n```/g,
     '<pre className="custom-code-block">$2</pre>'

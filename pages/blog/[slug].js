@@ -125,6 +125,7 @@ export default function SingleBlog ({post}){
 
 
 export async function getStaticPaths() {
+
   const postsDirectory = path.join(process.cwd(), "posts");
   const fileNames = fs.readdirSync(postsDirectory);
 
@@ -148,7 +149,8 @@ export async function getStaticProps({ params }) {
   const fullPath = path.join(process.cwd(), "posts", `${slug}.md`);
   const fileContents = fs.readFileSync(fullPath, "utf8");
   const matterResult = matter(fileContents);
-  // Replace code block markers (```language) with a custom class
+  
+  // Replace code block markers (```) with a custom class
   const contentWithCustomStyles = matterResult.content.replace(
     /```(\w+)\n([\s\S]*?)\n```/g,
     '<pre className="custom-code-block">$2</pre>'

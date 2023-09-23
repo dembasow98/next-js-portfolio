@@ -99,7 +99,7 @@ const Portfolio = ({ projects }) => {
           {projects && projects.map((project) => (
             <>
               <div
-                key={project.slug}
+                key={project?.slug}
                 className={`grid-item ${project?.categories?.join(" ")}`}
               >
                 <div className="portfolio-box-01">
@@ -119,11 +119,13 @@ const Portfolio = ({ projects }) => {
                             )}
                           </div>
                           <div className="d-flex flex-row gap-2 align-items-center">
-                            <Link  href={`/projects/${project?.slug}`}>
-                              <a>
-                                <i className="fas fa-eye"></i> Details
-                              </a>
-                            </Link>
+                            {project?.slug && (
+                              <Link href={`/portfolio/${project.slug}`}>
+                                <a>
+                                  <i className="fas fa-eye"></i> Details
+                                </a>
+                              </Link>
+                            )}
                           </div>
                       </div>
                     </div>

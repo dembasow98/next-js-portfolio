@@ -105,13 +105,13 @@ export async function getStaticProps() {
   const projectFileNames = fs.readdirSync(projectsDirectory);
 
   const projects = projectFileNames.map((fileName) => {
-    const id = fileName.replace(/\.md$/, "");
+    const slug = fileName.replace(/\.md$/, "");
     const fullPath = path.join(projectsDirectory, fileName);
     const fileContents = fs.readFileSync(fullPath, "utf8");
     const matterResult = matter(fileContents);
 
     return {
-      id,
+      slug,
       ...matterResult.data,
     };
   });
@@ -120,8 +120,8 @@ export async function getStaticProps() {
   // return the data as props
   return {
     props: {
-      posts,
       projects,
+      posts,
     },
   };
 

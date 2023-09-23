@@ -1,10 +1,10 @@
 import Link from "next/link";
 import { Fragment, useEffect, useState } from "react";
 import { activeSection } from "../utilits";
-const Header = ({ blog }) => {
+const Header = ({ blog, projects }) => {
   const [sideBarToggle, setSideBarToggle] = useState(false);
   useEffect(() => {
-    if (!blog) {
+    if (!blog && !projects) {
       activeSection();
     }
   }, []);
@@ -45,7 +45,8 @@ const Header = ({ blog }) => {
               <h5>DEMBA SOW</h5>
             </div>
           </div>
-          {blog ? <MenuWithBlog /> : <MenuWithOutBlog />}
+          {blog ?<MenuWithBlog /> : <MenuWithOutBlog />}
+          {/* {projects &&(!!blog) ? <MenuWithProjects /> : <MenuWithOutProjects />} */}
         </div>
         <div className="nav justify-content-center social-icons">
           <a href="https://github.com/dembasow98">
@@ -92,7 +93,7 @@ const MenuWithOutBlog = () => {
           <span>Services</span>
         </a>
       </li>
-      <li data-menuanchor="work">
+      <li data-menuanchor="work" className="work">
         <a className="nav-link" href="#work">
           <i className="ti-bookmark-alt" />
           <span>Portfolio</span>
@@ -149,7 +150,7 @@ const MenuWithBlog = () => {
             </a>
           </Link>
         </li>
-        <li data-menuanchor="work">
+        <li data-menuanchor="work" className="projects">
           <Link href="/#work">
             <a className="nav-link">
               <i className="ti-bookmark-alt" />
@@ -158,6 +159,114 @@ const MenuWithBlog = () => {
           </Link>
         </li>
         <li data-menuanchor="blog" className="blog active">
+          <Link href="/#blog">
+            <a className="nav-link">
+              <i className="ti-layout-media-overlay-alt-2" />
+              <span>Blogs</span>
+            </a>
+          </Link>
+        </li>
+        <li data-menuanchor="contactus">
+          <Link href="/#contactus">
+            <a className="nav-link">
+              <i className="ti-map-alt" />
+              <span>Contact</span>
+            </a>
+          </Link>
+        </li>
+      </ul>
+    </Fragment>
+  );
+};
+
+
+const MenuWithOutProjects = () => {
+  return (
+    <ul className="nav nav-menu" id="pp-menu">
+      <li data-menuanchor="home" className="active">
+        <a className="nav-link" href="#home">
+          <i className="ti-home" />
+          <span>Home</span>
+        </a>
+      </li>
+      <li data-menuanchor="about">
+        <a className="nav-link" href="#about">
+          <i className="ti-id-badge" />
+          <span>About</span>
+        </a>
+      </li>
+      <li data-menuanchor="services">
+        <a className="nav-link" href="#services">
+          <i className="ti-panel" />
+          <span>Services</span>
+        </a>
+      </li>
+      <li data-menuanchor="work" className="work">
+        <a className="nav-link" href="#work">
+          <i className="ti-bookmark-alt" />
+          <span>Portfolio</span>
+        </a>
+      </li>
+      
+      <li data-menuanchor="blog" className="blog">
+        <a className="nav-link" href="#blog">
+          <i className="ti-layout-media-overlay-alt-2" />
+          <span>Blogs</span>
+        </a>
+      </li>
+      <li data-menuanchor="contactus">
+        <a className="nav-link" href="#contactus">
+          <i className="ti-map-alt" />
+          <span>Contact</span>
+        </a>
+      </li>
+    </ul>
+  );
+};
+
+const MenuWithProjects = () => {
+  useEffect(() => {
+    window.addEventListener("scroll", () =>
+      document.querySelector(".projects").classList.add("active")
+    );
+  });
+
+  return (
+    <Fragment>
+      <ul className="nav nav-menu" id="pp-menu">
+        <li data-menuanchor="home">
+          <Link href="/#home">
+            <a className="nav-link">
+              <i className="ti-home" />
+              <span>Home</span>
+            </a>
+          </Link>
+        </li>
+        <li data-menuanchor="about">
+          <Link href="/#about">
+            <a className="nav-link">
+              <i className="ti-id-badge" />
+              <span>About</span>
+            </a>
+          </Link>
+        </li>
+        <li data-menuanchor="services">
+          <Link href="/#services">
+            <a className="nav-link">
+              <i className="ti-panel" />
+              <span>Services</span>
+            </a>
+          </Link>
+        </li>
+        <li data-menuanchor="work" className="projects active">
+          <Link href="/#work">
+            <a className="nav-link">
+              <i className="ti-bookmark-alt" />
+              <span>Portfolio</span>
+            </a>
+          </Link>
+        </li>
+        <li data-menuanchor="blog" className="blog">
           <Link href="/#blog">
             <a className="nav-link">
               <i className="ti-layout-media-overlay-alt-2" />

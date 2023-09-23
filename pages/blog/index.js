@@ -7,6 +7,7 @@ import path from "path";
 import matter from "gray-matter";
 
 const Blog = ({ posts }) => {
+  
   let sort = 4;
   const [active, setActive] = useState(1);
   const [state, setState] = useState([]);
