@@ -2,7 +2,6 @@ import Layout from "../../src/layout/Layout";
 import matter from "gray-matter";
 import fs from "fs";
 import path from "path";
-import Image from "next/image";
 import Markdown from "markdown-to-jsx";
 
 // Add this CSS to your component or a separate CSS file
@@ -24,7 +23,7 @@ export default function SingleProject ({project}){
 
   return (
   
-    <Layout blog>
+    <Layout projects>
       <style>{customStyles}</style>
       <div className="single-blog">
         <div className="container d-flex flex-column align-items-center">

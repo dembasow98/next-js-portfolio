@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { Fragment, useEffect, useState } from "react";
 import { activeSection } from "../utilits";
+import { Main } from "next/document";
 // import Image from "next/image";
 const Header = ({ blog, projects }) => {
   const [sideBarToggle, setSideBarToggle] = useState(false);
@@ -46,8 +47,15 @@ const Header = ({ blog, projects }) => {
               <h5>DEMBA SOW</h5>
             </div>
           </div>
-          {blog ?<MenuWithBlog /> : <MenuWithOutBlog />}
-          {/* {projects &&(!!blog) ? <MenuWithProjects /> : <MenuWithOutProjects />} */}
+
+          {blog || projects ? (
+            <>
+              {blog ? <MenuWithBlog /> : null}
+              {projects ? <MenuWithProjects /> : null}
+            </>
+          ) : (
+            <MainMenu />
+          )}
         </div>
         <div className="nav justify-content-center social-icons">
           <a href="https://github.com/dembasow98">
@@ -73,7 +81,7 @@ const Header = ({ blog, projects }) => {
 };
 export default Header;
 
-const MenuWithOutBlog = () => {
+const MainMenu = () => {
   return (
     <ul className="nav nav-menu" id="pp-menu">
       <li data-menuanchor="home" className="active">
@@ -94,7 +102,7 @@ const MenuWithOutBlog = () => {
           <span>Services</span>
         </a>
       </li>
-      <li data-menuanchor="work" className="work">
+      <li data-menuanchor="work" className="projects">
         <a className="nav-link" href="#work">
           <i className="ti-bookmark-alt" />
           <span>Portfolio</span>
@@ -118,6 +126,7 @@ const MenuWithOutBlog = () => {
 };
 
 const MenuWithBlog = () => {
+
   useEffect(() => {
     window.addEventListener("scroll", () =>
       document.querySelector(".blog").classList.add("active")
@@ -181,49 +190,7 @@ const MenuWithBlog = () => {
 };
 
 
-const MenuWithOutProjects = () => {
-  return (
-    <ul className="nav nav-menu" id="pp-menu">
-      <li data-menuanchor="home" className="active">
-        <a className="nav-link" href="#home">
-          <i className="ti-home" />
-          <span>Home</span>
-        </a>
-      </li>
-      <li data-menuanchor="about">
-        <a className="nav-link" href="#about">
-          <i className="ti-id-badge" />
-          <span>About</span>
-        </a>
-      </li>
-      <li data-menuanchor="services">
-        <a className="nav-link" href="#services">
-          <i className="ti-panel" />
-          <span>Services</span>
-        </a>
-      </li>
-      <li data-menuanchor="work" className="work">
-        <a className="nav-link" href="#work">
-          <i className="ti-bookmark-alt" />
-          <span>Portfolio</span>
-        </a>
-      </li>
-      
-      <li data-menuanchor="blog" className="blog">
-        <a className="nav-link" href="#blog">
-          <i className="ti-layout-media-overlay-alt-2" />
-          <span>Blogs</span>
-        </a>
-      </li>
-      <li data-menuanchor="contactus">
-        <a className="nav-link" href="#contactus">
-          <i className="ti-map-alt" />
-          <span>Contact</span>
-        </a>
-      </li>
-    </ul>
-  );
-};
+
 
 const MenuWithProjects = () => {
   useEffect(() => {

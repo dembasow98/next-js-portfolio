@@ -2,6 +2,13 @@ import Isotope from "isotope-layout";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 //import Image from "next/image";
+// import dynamic from 'next/dynamic';
+// // Dynamically import the component with code that depends on 'window'
+// const Isotope = dynamic(
+//   () => import('isotope-layout'),
+//   { ssr: false }
+// );
+
 
 const Portfolio = ({ projects }) => {
 
@@ -109,9 +116,8 @@ const Portfolio = ({ projects }) => {
         </div>
         <div className="portfolio-content grid-gutter-lg grid-col-3 lightbox-gallery">
           {projects && projects.map((project) => (
-            <>
+            <div key={project?.slug}>
               <div
-                key={project?.slug}
                 className={`grid-item ${project?.categories?.map(slugifyCategory).join(' ')}`}
               >
                 <div className="portfolio-box-01">
@@ -119,7 +125,7 @@ const Portfolio = ({ projects }) => {
                       <h5 className="white-color font-weight-bold">
                         {project.title}
                       </h5>
-                      <span>{project.description}</span>
+                      <span>{project?.description}</span>
                       <div className="portfolio-links d-flex flex-row justify-content-between">
                           <div className="d-flex flex-row gap-2 align-items-center">
                             {project?.github && (
@@ -147,7 +153,7 @@ const Portfolio = ({ projects }) => {
                 </div>
               </div>
               {" "}
-            </>
+            </div>
           ))}
         </div>
       </div>
