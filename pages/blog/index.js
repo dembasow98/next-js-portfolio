@@ -114,6 +114,8 @@ const Blog = ({ posts }) => {
   );
 };
 
+
+
 export async function getStaticProps() {
   
   const postsDirectory = path.join(process.cwd(), "posts");
@@ -138,5 +140,7 @@ export async function getStaticProps() {
     },
   };
 }
+
+
 
 export default Blog;

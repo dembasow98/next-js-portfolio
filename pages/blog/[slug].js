@@ -121,16 +121,6 @@ export default function SingleBlog ({post}){
   );
 };
 
-//Let's generate the paths for all the static pages
-
-export async function generateStaticParams() {
-  return {
-    paths: [
-      { params: { slug: "blog-post-1" } },
-    ]
-  };
-}
-
 
 export async function getStaticPaths() {
 
