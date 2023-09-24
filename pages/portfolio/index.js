@@ -1,21 +1,22 @@
 import Isotope from "isotope-layout";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-
+import Layout from '../../src/layout/Layout'
+import Image from "next/image";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 
-const Portfolio = ({ projects }) => {
+const Portfolio = ({ portfolio }) => {
 
 
-  //Sort the projects by date
-  projects = projects?.sort((a, b) => {
+  //Sort the portfolio by date
+  portfolio = portfolio?.sort((a, b) => {
     return new Date(b.date) - new Date(a.date);
   });
 
-  //Test if the projects are loaded
-  //console.log("All projects: " , projects);
+  //Test if the portfolio are loaded
+  //console.log("All portfolio: " , portfolio);
   // Isotope
   const isotope = useRef();
   const [filterKey, setFilterKey] = useState("*");
@@ -101,7 +102,7 @@ const Portfolio = ({ projects }) => {
             </ul>
             </div>
             <div className="portfolio-content grid-gutter-lg grid-col-3 lightbox-gallery">
-            {projects && projects.map((project) => (
+            {portfolio && portfolio.map((project) => (
                 <>
                 <div
                     key={project.slug}
@@ -124,7 +125,7 @@ const Portfolio = ({ projects }) => {
                                 )}
                             </div>
                             <div className="d-flex flex-row gap-2 align-items-center">
-                                <Link  href={`/projects/${project?.slug}`}>
+                                <Link  href={`/portfolio/${project?.slug}`}>
                                 <a>
                                     <i className="fas fa-eye"></i> Details
                                 </a>
@@ -151,12 +152,12 @@ const Portfolio = ({ projects }) => {
 
 export async function getStaticProps() {
   
-    const projectsDirectory = path.join(process.cwd(), "projects");
-    const fileNames = fs.readdirSync(projectsDirectory);
+    const portfolioDirectory = path.join(process.cwd(), "portfolio");
+    const fileNames = fs.readdirSync(portfolioDirectory);
   
-    const projects = fileNames.map((fileName) => {
+    const portfolio = fileNames.map((fileName) => {
       const slug = fileName.replace(/\.md$/, "");
-      const fullPath = path.join(projectsDirectory, fileName);
+      const fullPath = path.join(portfolioDirectory, fileName);
       const fileContents = fs.readFileSync(fullPath, "utf8");
       const matterResult = matter(fileContents);
   
@@ -169,7 +170,7 @@ export async function getStaticProps() {
   
     return {
       props: {
-        projects,
+        portfolio,
       },
     };
 }

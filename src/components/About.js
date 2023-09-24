@@ -1,3 +1,5 @@
+// import Image from "next/image";
+
 
 const About = () => {
   return (
@@ -12,7 +14,7 @@ const About = () => {
             <div className="about-me">
               <div className="img">
                 <div className="img-in">
-                  <img src="static/img/personal/home.png" title="Demba Sow Full stack web developer" alt="Demba Sow Full stack web developer" />
+                  <img src="/static/img/personal/home.png" title="Demba Sow Full stack web developer" alt="Demba Sow Full stack web developer" />
                 </div>
               </div>
             </div>
@@ -151,7 +153,7 @@ const About = () => {
             <div className="row">
               <div className="col-sm-3 col-md-3 col-xl-2">
                 <div className="rb-left">
-                  <img src="static/img/experience/carcheckup-logo.png" title="CarCheckUp" alt="CarCheckUp UK based car report provider" />
+                  <img src="/static/img/experience/carcheckup-logo.png" title="CarCheckUp" alt="CarCheckUp UK based car report provider" />
                 </div>
               </div>
               <div className="col-sm-9 col-md-9 col-xl-10">
@@ -172,7 +174,7 @@ const About = () => {
             <div className="row">
               <div className="col-sm-3 col-md-3 col-xl-2">
                 <div className="rb-left">
-                  <img src="static/img/experience/work3-logo.png" title="Work3 teknoloji a.ş" alt="Work3 teknoloji startup şirketi sakarya university teknokent" />
+                  <img src="/static/img/experience/work3-logo.png" title="Work3 teknoloji a.ş" alt="Work3 teknoloji startup şirketi sakarya university teknokent" />
                 </div>
               </div>
               <div className="col-sm-9 col-md-9 col-xl-10">
@@ -192,7 +194,7 @@ const About = () => {
             <div className="row">
               <div className="col-sm-3 col-md-3 col-xl-2">
                 <div className="rb-left">
-                  <img src="static/img/experience/sakarya-university-logo.png" title="Sakarya University SAU" alt="Sakarya University Turkiye Public University" />
+                  <img src="/static/img/experience/sakarya-university-logo.png" title="Sakarya University SAU" alt="Sakarya University Turkiye Public University" />
                 </div>
               </div>
               <div className="col-sm-9 col-md-9 col-xl-10">

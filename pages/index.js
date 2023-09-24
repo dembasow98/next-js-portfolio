@@ -53,7 +53,7 @@ const Index = ({posts, projects}) => {
               </div>
               <div className="col-lg-6">
                 <div className="hb-img">
-                  <img src="static/img/personal/banner.png" title="" alt="" />
+                  <img src="static/img/personal/banner.png" title="Demba Sow Banner" alt="Demba Sow Banner" />
                 </div>
               </div>
             </div>

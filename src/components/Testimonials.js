@@ -1,4 +1,5 @@
 import { Fragment } from "react";
+// import Image from "next/image";
 import SwiperCore, {
   Autoplay,
   EffectFade,
@@ -34,7 +35,7 @@ const Testimonials = () => {
       <Swiper {...props}>
         <SwiperSlide className="testimonial-01 media">
           <div className="avatar">
-            <img src="static/img/testimonials/avatar.png" 
+            <img src="/static/img/testimonials/avatar.png" 
               title="Demba Sow - Full Stack Developer -  AI and Machine Learning Developer - Content Writer - Translator" 
               alt="Demba Sow - Full Stack Developer -  AI and Machine Learning Developer - Content Writer - Translator" 
             />
@@ -52,7 +53,7 @@ const Testimonials = () => {
         </SwiperSlide>
         <SwiperSlide className="testimonial-01 media">
           <div className="avatar theme-bg">
-            <img src="static/img/testimonials/avatar.png" 
+            <img src="/static/img/testimonials/avatar.png" 
               title="Demba Sow - Full Stack Developer -  AI and Machine Learning Developer - Content Writer - Translator" 
               alt="Demba Sow - Full Stack Developer -  AI and Machine Learning Developer - Content Writer - Translator" 
             />
@@ -70,7 +71,7 @@ const Testimonials = () => {
         </SwiperSlide>
         <SwiperSlide className="testimonial-01 media">
           <div className="avatar">
-            <img src="static/img/testimonials/avatar.png" 
+            <img src="/static/img/testimonials/avatar.png" 
               title="Demba Sow - Full Stack Developer -  AI and Machine Learning Developer - Content Writer - Translator" 
               alt="Demba Sow - Full Stack Developer -  AI and Machine Learning Developer - Content Writer - Translator" 
             />
@@ -87,7 +88,7 @@ const Testimonials = () => {
         </SwiperSlide>
         <SwiperSlide className="testimonial-01 media">
           <div className="avatar">
-            <img src="static/img/testimonials/avatar.png" 
+            <img src="/static/img/testimonials/avatar.png" 
               title="Demba Sow - Full Stack Developer -  AI and Machine Learning Developer - Content Writer - Translator" 
               alt="Demba Sow - Full Stack Developer -  AI and Machine Learning Developer - Content Writer - Translator" 
             />

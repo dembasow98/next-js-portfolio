@@ -1,10 +1,10 @@
 ---
-title: "Pinterest Clone"
+title: "Simple Chat App with GetStream"
 date: "04 JULY 2023"
-banner: "/static/img/portfolio/pinterest-clone/home-page.png"
+banner: "/static/img/portfolio/chatapp-with-getstream/home.png"
 categories: [WEB DEVELOPMENT]
-tags: [react.js, TailwindCss, Sanity.io, Node.js, pinterest, post, comment, feed, google-auth]
-description: "A Pinterest clone built with React.js, TailwindCss, Sanity.io, and Node.js"
+tags: [React.js, Tailwind Css, Node.js, Express.js, Sanity.io, GetStream]
+description: "A simple chat app built with React.js, Tailwind Css, Node.js, Express.js, Sanity.io and GetStream."
 github: "https://github.com/dembasow98/masterclassproperty"
 ---
 

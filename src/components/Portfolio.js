@@ -1,6 +1,7 @@
 import Isotope from "isotope-layout";
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
+//import Image from "next/image";
 
 const Portfolio = ({ projects }) => {
 
@@ -14,6 +15,9 @@ const Portfolio = ({ projects }) => {
   //console.log("All projects: " , projects);
   // Isotope
   const isotope = useRef();
+
+  //const isotope = useRef<Isotope | null>(null);
+
   const [filterKey, setFilterKey] = useState("*");
 
   useEffect(() => {
@@ -32,6 +36,8 @@ const Portfolio = ({ projects }) => {
     return () => isotope.current.destroy();
   });
 
+
+
   useEffect(() => {
     if (isotope.current) {
       filterKey === "*"
@@ -43,6 +49,12 @@ const Portfolio = ({ projects }) => {
   const handleFilterKeyChange = (key) => () => {
     setFilterKey(key);
   };
+
+  //Create slug from categories:
+  function slugifyCategory(category) {
+    // Convert to lowercase and replace spaces with hyphens
+    return category.toLowerCase().replace(/\s+/g, '-');
+  }
 
   const activeBtn = (value) => (value === filterKey ? "active" : "");
 
@@ -73,9 +85,9 @@ const Portfolio = ({ projects }) => {
               WEB DEVELOPMENT
             </li>
             <li
-              className={`c-pointer ${activeBtn("artificial-intelligence-machine-learning")}`}
-              onClick={handleFilterKeyChange("artificial-intelligence-machine-learning")}
-              data-filter=".artificial-intelligence-machine-learning"
+              className={`c-pointer ${activeBtn("machine-learning")}`}
+              onClick={handleFilterKeyChange("machine-learning")}
+              data-filter=".machine-learning"
             >
               AI & MACHINE LEARNING
             </li>
@@ -100,7 +112,7 @@ const Portfolio = ({ projects }) => {
             <>
               <div
                 key={project?.slug}
-                className={`grid-item ${project?.categories?.join(" ")}`}
+                className={`grid-item ${project?.categories?.map(slugifyCategory).join(' ')}`}
               >
                 <div className="portfolio-box-01">
                     <div className="portfolio-info">

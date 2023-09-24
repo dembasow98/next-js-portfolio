@@ -2,7 +2,7 @@ import Layout from "../../src/layout/Layout";
 import matter from "gray-matter";
 import fs from "fs";
 import path from "path";
-
+import Image from "next/image";
 import Markdown from "markdown-to-jsx";
 
 // Add this CSS to your component or a separate CSS file
@@ -39,9 +39,10 @@ export default function SingleProject ({project}){
                     <div className="d-flex flex-row gap-2 align-items-center">
                         {
                           project?.categories && project.categories.map((category, index) => (
-                              <h6>
-                                  <a key={index} href="#">{category}</a>
-                              </h6>
+                              <span key={index}>
+                                <a href="#">{category}</a>
+                                <span className="px-2"></span>
+                              </span>
                           ))
                         }
                     </div>

@@ -5,17 +5,20 @@ import { getPagination, pagination } from "../../src/utilits";
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+// import Image from "next/image";
+
 
 const Blog = ({ posts }) => {
   
   let sort = 4;
   const [active, setActive] = useState(1);
   const [state, setState] = useState([]);
+
   useEffect(() => {
     pagination(".blog-list-item", sort, active);
     let list = document.querySelectorAll(".blog-list-item");
     setState(getPagination(list?.length, sort));
-  }, [active]);
+  }, [active, sort]);
 
   return (
     <Layout blog>
@@ -31,7 +34,13 @@ const Blog = ({ posts }) => {
                   <div className="blog-img">
                     <Link href={`/blog/${post?.slug}`}>
                       <a>
-                        <img src={`${post?.banner}`} title={`${post?.title}`} alt= {`${post?.title}`} />
+                        {/* <img src={`${post?.banner}`} title={`${post?.title}`} alt= {`${post?.title}`} /> */}
+                        <img
+                          src={`${post?.banner}`}
+                         
+                          title={`${post?.title}`} 
+                          alt= {`${post?.title}`}
+                        />
                       </a>
                     </Link>
                   </div>

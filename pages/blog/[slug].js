@@ -2,7 +2,7 @@ import Layout from "../../src/layout/Layout";
 import matter from "gray-matter";
 import fs from "fs";
 import path from "path";
-
+//import Image from "next/image";
 import Markdown from "markdown-to-jsx";
 
 // Add this CSS to your component or a separate CSS file
@@ -41,7 +41,7 @@ export default function SingleBlog ({post}){
                   <h2> {post.title}</h2>
                   <div className="media">
                     <div className="avatar">
-                      <img 
+                      <img
                         src="/static/img/personal/icon.png" 
                         title="Demba Sow - Full Stack Web Developer - AI and Machine Learning Developer - Content Writer - Polyglot" 
                         alt="Demba Sow - Full Stack Web Developer - AI and Machine Learning Developer - Content Writer - Polyglot" 
@@ -121,7 +121,15 @@ export default function SingleBlog ({post}){
   );
 };
 
+//Let's generate the paths for all the static pages
 
+export async function generateStaticParams() {
+  return {
+    paths: [
+      { params: { slug: "blog-post-1" } },
+    ]
+  };
+}
 
 
 export async function getStaticPaths() {

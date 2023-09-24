@@ -2,47 +2,12 @@
 title: "OHARA BOOKSHELF"
 date: "04 JULY 2023"
 banner: "/static/img/portfolio/ohara-bookshelf/ohara-home.png"
-categories: [WEB DEVELOPMENT, MACHINE LEARNING, ARTIFICIAL INTELLIGENCE]
+categories: [WEB DEVELOPMENT, MACHINE LEARNING, CONTENT WRITING]
 tags: [Nest.js, TypeScript, React.js, TailwindCss, Passaport.js, Node.js, Google Auth, Scikit-learn, Python, NLTk, Hybrid Recommender System, 
 Collaborative Filtering, Content-based Filtering, Books Recommendation, GraphQL, FastAPI, Face Recognition, OpenCV, Emotion Recognition, Chackra UI]
 description: "Ohara bookshelf is a books recommendation website built with React.js, TypeScript.js, Nest.js, Vite.js, Node.js, and more."
-github: "https://github.com/dembasow98/masterclassproperty"
+github: "https://github.com/ohara-bookshelf"
 ---
-
-
-<a name="readme-top"></a>
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h3 align="center">Best-README-Template</h3>
-
-  <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
-  </p>
-</div>
 
 
 
@@ -77,103 +42,187 @@ github: "https://github.com/dembasow98/masterclassproperty"
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+OHARA is a revolutionary online platform designed for e-book enthusiasts to manage, track, 
+and enhance their reading experience. With a user-friendly interface and intuitive features, 
+OHARA empowers users to create and organize personalized bookshelves, explore the 
+collections of other users, and receive smart book recommendations.
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+The platform allows users to effortlessly manage their e-book collections by creating and 
+customizing bookshelves. They can categorize their books, track their reading progress, and 
+easily access their favorite titles. Additionally, OHARA encourages interaction and 
+collaboration among users, as they can explore and engage with the bookshelves of fellow 
+bibliophiles. This fosters a vibrant community where users can discover new books and share 
+their literary interests.
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+OHARA takes reading recommendations to the next level with its intelligent algorithms. By 
+analyzing users' reading preferences, history, and engagement with the platform, it provides 
+personalized book recommendations that align with individual tastes and interests. This 
+ensures that users are constantly discovering new books that resonate with them.
+Furthermore, OHARA leverages cutting-edge technologies such as web scraping and text 
+mining to provide valuable insights and ratings for recommended books. Users can access 
+reviews from trusted sources, enabling them to make informed decisions before selecting 
+their next read.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
+To add a touch of personalization, OHARA integrates with neural networks and real-world 
+survey data to analyze users' emotions. By capturing facial expressions through a built-in 
+camera feature, the platform can determine users' current emotional states and recommend 
+books that align with their mood and emotional needs.
+In a nutshell, OHARA is a comprehensive platform that aims to revolutionize the e-book 
+reading experience. With its intuitive interface, personalized bookshelves, collaborative 
+features, intelligent recommendations, and emotional analysis, it provides a seamless and 
+enriching reading journey for bibliophiles worldwide.
 
-Use the `BLANK_README.md` to get started.
-
-<p align="right"><a href="#readme-top">⬆️</a></p>
 
 
+<br />
+<div align="center">
+  <a href="https://github.com/ohara-bookshelf">
+    <img src="/static/img/portfolio/ohara-bookshelf/ohara-logo.png" alt="Demba Sow - Ohara Bookshelf">
+  </a>
+</div>
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+Ohara bookshelf is my first all-in-one project. where I used a lot of technologies, frameworks, and libraries.
+Here are some of the major ones:
 
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+##### Frontend
 
-<p align="right"><a href="#readme-top">⬆️</a></p>
+| Technology            | Abstract                                             |
+|-----------------------|-----------------------------------------------------|
+| React                 | A JavaScript library for building user interfaces. |
+| Chakra UI             | A flexible and accessible UI component library for React. |
+| Chakra React Select   | A custom select component for Chakra UI.           |
+| React Router DOM      | A routing library for React applications.           |
+| Emotion               | A CSS-in-JS library for styling React components.   |
+| React OAuth Google    | An OAuth library for integrating Google.            |
+| Axios                 | A promise-based HTTP client for making API requests. |
+| Formik                | A form library for managing form state in React.    |
+| Yup                   | A JavaScript schema validation library for form validation. |
+| Framer Motion         | A motion library for adding animations to React components. |
+| React Icons           | A library of customizable SVG icons for React.      |
+| React Webcam          | A React component for capturing images from a webcam. |
+| Zustand               | A small, fast, and scalable state management library for React. |
 
+
+##### Backend
+| Technology                   | Abstract                                             |
+|------------------------------|-----------------------------------------------------|
+| Node.js                      | A JavaScript runtime environment for server-side development. |
+| Express                      | A web application framework for Node.js.           |
+| NestJS                       | A TypeScript-based server-side framework for building scalable and maintainable applications. |
+| Axios                        | A promise-based HTTP client for making API requests. |
+| JWT                          | JSON Web Token for authentication and authorization. |
+| Passport                     | A middleware for user authentication in Node.js.   |
+| Prisma                       | A middleware for user authentication in Node.js.   |
+| Class Transformer             | A library for transforming plain JavaScript objects to class instances and vice versa. |
+| Class Validator              | A library for input validation and data normalization in classes. |
+| dotenv                       | A module for loading environment variables from a .env file. |
+| Express Session              | A session middleware for Express.                   |
+| Google Auth Library          | A library for integrating Google authentication in Node.js applications. |
+| Morgan                       | A logging middleware for HTTP requests in Express.   |
+| Passport Google OAuth 2.0    | A Passport strategy for authenticating with Google using OAuth 2.0. |
+| Passport JWT                 | A Passport strategy for authenticating with JSON Web Tokens. |
+| Passport Local               | A Passport strategy for authenticating with a username and password. |
+| Reflect Metadata             | A library for adding and reading metadata annotations in TypeScript. |
+| Rimraf                       | A module for deleting files and directories.       |
+| RxJS                         | A library for reactive programming using Observables. |
+
+
+##### Machine Learning
+| Library                | Abstract                                             |
+|------------------------|-----------------------------------------------------|
+| Sci-kit learn          | A machine learning library in Python that provides tools for building hybrid recommendation models. |
+| Pandas                 | A data manipulation library for data preprocessing and analysis. |
+| Numpy                  | The fundamental package for scientific computing in Python. It is a Python library that provides a multidimensional array object and various derived tools. |
+| Natural Language Processing (NLTK) | Techniques and libraries for text analysis and processing. |
+| Pickle                 | Primarily used in serializing and deserializing a Python object structure. |
+
+
+##### Web Scraping and Sentiment Analysis
+| Library                | Abstract                                             |
+|------------------------|-----------------------------------------------------|
+| Selenium               | A web automation and scraping library.              |
+| Tqdm                   | A library for adding progress bars to Python code.  |
+| Natural Language Processing (NLTK) | The Natural Language Toolkit for natural language processing tasks. |
+
+
+#### Version Control and Deployment
+| Tool                    | Abstract                                             |
+|-------------------------|-----------------------------------------------------|
+| Git                     | Version control system.                              |
+| GitHub                  | Code repository for collaborative development.      |
+| Docker                  | A containerization platform for packaging and deploying applications. |
 
 
 <!-- GETTING STARTED -->
+<!-- GETTING STARTED -->
 ## Getting Started
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+To run OHARA Bookshelf locally, you need to have Node.js, Docker, Python3, and npm installed on your machine.
+
+
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
+Here are the prerequisites you need to have in order to use the software and how to install them:
+
+
+#### Backend:
+
+- **npm**:
+
+Install npm by running the following command:
+```bash
+npm install npm@latest -g
+```
+
+- **Docker**:
+
+Docker is required to run the OHARA Bookshelf backend services. Make sure you have Docker installed on your machine. If not, you can download and install Docker from Docker's official website.
+
+- Installation
+To set up OHARA Bookshelf and its backend services, follow these steps:
+
+- Get a free API Key at https://example.com.
+
+Clone the OHARA Bookshelf repository:
+
+- **.env**:
+You need to create a .env file in the backend folder of the project and add the following environment variables:
+
+```bash
+  PORT=8000
+  GAUTH_CLIENT_ID=
+  GAUTH_CLIENT_SECRET=
+  DATABASE_URL="postgres://postgres:password@localhost:5433/oharaDB"
+  POSTGRES_USER=postgres
+  POSTGRES_PASSWORD=
+  POSTGRES_DB=oharaDB
+  SESSION_SECRET=secret
+  JWT_SECRET=
+  ML_API_URL=http://localhost:8001
+  EXPRESSION_API_URL=http://localhost:8002
+  EMOTION_API_URL=http://localhost:8003
+  REVIEW_API_URL=http://localhost:8004
+```
+
+#### Frontend:
+
+Install npm by running the following command:
+
+```bash
   npm install npm@latest -g
-  ```
+```
 
-### Installation
+- **.env**:
+You need to create a .env file in the backend folder of the project and add the following environment variables:
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
-
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```bash
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```bash
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```bash
-   const API_KEY = 'ENTER YOUR API';
-   ```
-
-<p align="right"><a href="#readme-top">⬆️</a></p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right"><a href="#readme-top">⬆️</a></p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Add Changelog
-- [x] Add back to top links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right"><a href="#readme-top">⬆️</a></p>
-
-
+```bash	
+  VITE_GOOGLE_CLIENT_ID=
+  VITE_GOOGLE_CLIENT_SECRET = 
+  VITE_API_BASE_URL=http://localhost:8000
+```
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -189,62 +238,72 @@ Don't forget to give the project a star! Thanks again!
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-<p align="right"><a href="#readme-top">⬆️</a></p>
-
 
 
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right"><a href="#readme-top">⬆️</a></p>
+Copyright (c) - 2023
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
 
 
 
 <!-- CONTACT -->
-## Contact
+If you have any questions, suggestions, project(s), or just want to say hi, **[feel free to reach out to me](mailto:your.email@example.com)**
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
+- [Twitter](https://twitter.com/dembasowfr)
+- [LinkedIn](https://www.linkedin.com/in/demba-sow-95903a22a/)
+- [Github](https://github.com/dembasow98)
+- [Instagram](https://www.instagram.com/dembasowofficial/)
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
-
-<p align="right"><a href="#readme-top">⬆️</a></p>
+You can also visit my personal website: [dembasow98.github.io](https://dembasow98.github.io/)
 
 
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+I would like to thank the following people for their support and encouragement:
 
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+1. Zidan Omar Hamid: We did this final project together. I have learned a lot from him and He is a great friend and a great developer.
+You can reach him on [LinkedIn](https://www.linkedin.com/in/zidanomar/) or view his incredible works in [Github](https://github.com/zidanomar)
+2. Dr. Can Yüzkollar : For supervising us throughout the project.
 
-<p align="right"><a href="#readme-top">⬆️</a></p>
-
+<h3 align="right"><a href="#">⬆️</a></h3>
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/dembasow98/Best-README-Template.svg?style=for-the-badge
+[contributors-url]: https://github.com/dembasow98/Best-README-Template/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/dembasow98/Best-README-Template.svg?style=for-the-badge
+[forks-url]: https://github.com/dembasow98/Best-README-Template/network/members
+[stars-shield]: https://img.shields.io/github/stars/dembasow98/Best-README-Template.svg?style=for-the-badge
+[stars-url]: https://github.com/dembasow98/Best-README-Template/stargazers
+[issues-shield]: https://img.shields.io/github/issues/dembasow98/Best-README-Template.svg?style=for-the-badge
+[issues-url]: https://github.com/dembasow98/Best-README-Template/issues
+[license-shield]: https://img.shields.io/github/license/dembasow98/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://github.com/dembasow98/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[linkedin-url]: https://linkedin.com/in/dembasow98
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
@@ -262,3 +321,25 @@ Use this space to list resources you find helpful and would like to give credit 
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+[Django]: https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white
+[Django-url]: https://www.djangoproject.com/
+[Django-rest-framework]: https://img.shields.io/badge/Django-REST%20Framework-092E20?style=for-the-badge&logo=django&logoColor=white
+[Django-rest-framework-url]: https://www.django-rest-framework.org/
+[CSS]: https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white
+[CSS-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
+[HTML]: https://img.shields.io/badge/HTML-239120?&style=for-the-badge&logo=html5&logoColor=white
+[HTML-url]: https://developer.mozilla.org/en-US/docs/Web/HTML
+[Tailwind Css]: https://img.shields.io/badge/Tailwind%20Css-239120?&style=for-the-badge&logo=tailwind-css&logoColor=white
+[Tailwind Css-url]: https://tailwindcss.com/
+[PostgreSQL]: https://img.shields.io/badge/PostgreSQL-239120?&style=for-the-badge&logo=postgresql&logoColor=white
+[PostgreSQL-url]: https://www.postgresql.org/
+[Docker]: https://img.shields.io/badge/Docker-239120?&style=for-the-badge&logo=docker&logoColor=white
+[Docker-url]: https://www.docker.com/
+[Experian API]: https://img.shields.io/badge/Experian%20API-239120?&style=for-the-badge&logo=experian&logoColor=white
+[Experian API-url]: https://developer.experian.com/
+[Paypal]: https://img.shields.io/badge/Paypal-239120?&style=for-the-badge&logo=paypal&logoColor=white
+[Paypal-url]: https://developer.paypal.com/
+[Stripe]: https://img.shields.io/badge/Stripe-239120?&style=for-the-badge&logo=stripe&logoColor=white
+[Stripe-url]: https://stripe.com/
+[SEO]: https://img.shields.io/badge/SEO-239120?&style=for-the-badge&logo=seo&logoColor=white
+[SEO-url]: https://developers.google.com/search/docs/fundamentals/seo-starter-guide

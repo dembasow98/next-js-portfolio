@@ -1,48 +1,23 @@
 ---
-title: "CarCheckUp Web App"
+title: "CarCheckUp - Car History Check in UK"
 date: "04 JULY 2023"
 banner: "/static/img/portfolio/carcheckup/carcheckup-desktop-landing.png"
-categories: [WEB DEVELOPMENT]
+categories: [WEB DEVELOPMENT, CONTENT WRITING, FOREIGN LANGUAGE]
 tags: [Django, Django-rest-framework, CSS, HTML, Tailwind Css, PostgreSQL, Docker, Experian API]
 description: "A car history check web app built with Django, Django-rest-framework, CSS, HTML, Tailwind Css, PostgreSQL, Docker, Experian API for a UK based client."
-github: "https://github.com/dembasow98/masterclassproperty"
+#github: "https://github.com/dembasow98/masterclassproperty"
 ---
 
 
 <a name="readme-top"></a>
 
-[![Contributors][contributors-shield]][contributors-url]
+<!-- [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h3 align="center">Best-README-Template</h3>
-
-  <p align="center">
-    An awesome README template to jumpstart your projects!
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
-    <a href="https://github.com/othneildrew/Best-README-Template">View Demo</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
-  </p>
-</div>
-
+ -->
 
 
 <!-- TABLE OF CONTENTS -->
@@ -75,175 +50,183 @@ github: "https://github.com/dembasow98/masterclassproperty"
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+<!-- PROJECT LOGO -->
+<!-- <br />
+<div align="center">
+  <a href="carcheckup.co.uk">
+    <img src="/static/img/portfolio/carcheckup/logo.png" alt="CarCheckUp - Car History Check - UK" >
+  </a>
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+  <h3 align="center">CarCheckUp - Car History Check in UK</h3>
 
-There are many great README templates available on GitHub; however, I didn't find one that really suited my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need -- I think this is it.
+  <p align="center">
+    <a href="https://github.com/dembasow98/Best-README-Template"><strong>Explore the docs »</strong></a>
+    <br />
+    <br />
+    <a href="https://github.com/dembasow98/Best-README-Template">View Demo</a>
+    ·
+    <a href="https://github.com/dembasow98/Best-README-Template/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/dembasow98/Best-README-Template/issues">Request Feature</a>
+  </p>
+</div> -->
 
-Here's why:
-* Your time should be focused on creating something amazing. A project that solves a problem and helps others
-* You shouldn't be doing the same tasks over and over like creating a README from scratch
-* You should implement DRY principles to the rest of your life :smile:
+CarCheckUp is a car history check company based in the UK. They provide car history checks to their customers. They wanted a website where their customers can check the history of their cars. They also wanted a dashboard where they can manage their customers and their orders. They also wanted to integrate Experian API to their website so that their customers can get the most accurate car history check. In CarCheckUp, a customer can check the following services about their car:
+  - MOT History
+  - Mileage History
+  - Outstanding Finance
+  - Written Off
+  - Stolen
+  - Imported
+  - Scrapped
+  - And many more.
 
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue. Thanks to all the people have contributed to expanding this template!
-
-Use the `BLANK_README.md` to get started.
-
-<p align="right"><a href="#readme-top">⬆️</a></p>
+<br/>
 
 
+##### Built With
 
-### Built With
+The project is built with the following technologies:
+* [Django][Django-url]
+* [Django-rest-framework][Django-rest-framework-url]
+* [CSS][CSS-url]
+* [HTML][HTML-url]
+* [TailwindCss][Tailwind Css-url]
+* [Bootstrap][Bootstrap-url]
+* [Experian API][Experian API-url]
+* [Docker][Docker-url]
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-* [![Next][Next.js]][Next-url]
-* [![React][React.js]][React-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![Angular][Angular.io]][Angular-url]
-* [![Svelte][Svelte.dev]][Svelte-url]
-* [![Laravel][Laravel.com]][Laravel-url]
-* [![Bootstrap][Bootstrap.com]][Bootstrap-url]
-* [![JQuery][JQuery.com]][JQuery-url]
-
-<p align="right"><a href="#readme-top">⬆️</a></p>
 
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Functionalities
 
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
+The CarCheckUp website has the following functionalities:
 
-### Prerequisites
+#####Car History Report
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+Here the client enters the car registration *REG NUMBER* and clicks on the *CHECK NOW* button. Then the client is redirected to the *Car History Report* page where the client can see the car history report. Here the client will be able to view only the free services. If they wish to view the paid services, they have to pay for it. The payment methods are made with Paypal and Stripe. 
+The provided car history report is generated using the Experian API. The client can also download the report as a PDF file.
 
-### Installation
+<div align="center">
+  <img src="/static/img/portfolio/carcheckup/carcheckup-desktop-landing.png" alt="CarCheckUp - Car History Check - UK" >
+</div>
+<br/>
 
-_Below is an example of how you can instruct your audience on installing and setting up your app. This template doesn't rely on any external dependencies or services._
+##### Voucher Code
 
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-   ```bash
-   git clone https://github.com/your_username_/Project-Name.git
-   ```
-3. Install NPM packages
-   ```bash
-   npm install
-   ```
-4. Enter your API in `config.js`
-   ```bash
-   const API_KEY = 'ENTER YOUR API';
-   ```
+If the client purchase a package with multiple checks, they will be able to use the voucher code to check the history of multiple cars. The voucher code is generated by the admin. The client can enter the voucher code in the *Voucher Code* field and click on the *CHECK NOW* button. Then the client is redirected to the *Car History Report* page where the client can see the car history report. Here the client will be able to view only the free services. If they wish to view the paid services, they have to pay for it. The payment methods are made with Paypal and Stripe.
 
-<p align="right"><a href="#readme-top">⬆️</a></p>
+<div align="center">
+  <img src="/static/img/portfolio/carcheckup/carcheckup-service.png" alt="CarCheckUp - Car History Check - UK" >
+</div>
 
 
 
-<!-- USAGE EXAMPLES -->
-## Usage
+### NOTE:
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-<p align="right"><a href="#readme-top">⬆️</a></p>
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-- [x] Add Changelog
-- [x] Add ⬆️ links
-- [ ] Add Additional Templates w/ Examples
-- [ ] Add "components" document to easily copy & paste sections of the readme
-- [ ] Multi-language Support
-    - [ ] Chinese
-    - [ ] Spanish
-
-See the [open issues](https://github.com/othneildrew/Best-README-Template/issues) for a full list of proposed features (and known issues).
-
-<p align="right"><a href="#readme-top">⬆️</a></p>
+<p align="left">
+  <em>This project belongs to a client and is not open source. The code is not publicly available.</em>
+  <br />
+  <em>This repository serves as a portfolio project to showcase my work.</em> 
+</p>
+But you can check the live website here: [carcheckup.co.uk](https://carcheckup.co.uk/)
 
 
 
-<!-- CONTRIBUTING -->
-## Contributing
 
-Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+##### Blog
 
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-Don't forget to give the project a star! Thanks again!
+The CarCheckUp website has a blog section where the admin can post blogs. The blog posts are categorized into different categories. The blog posts can be viewed by the clients. The clients can also comment on the blog posts. The admin can also delete the comments.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-<p align="right"><a href="#readme-top">⬆️</a></p>
-
+<div align="center">
+  <img src="/static/img/portfolio/carcheckup/carcheckup-desktop-bloging-png.png" alt="CarCheckUp - Car History Check - UK" >
+</div>
 
 
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
 
-<p align="right"><a href="#readme-top">⬆️</a></p>
+This License Agreement ("Agreement") is entered into between you ("User") and Milena Software Ltd, a registered company in England and Wales with company number 712117374, and owner of carcheckup.co.uk ("carcheckup.co.uk"). By using the services provided on this website, you agree to the following terms and conditions:
 
+
+1. By accessing and using the carcheckup.co.uk website and its services, you acknowledge that you have read, understood, and agreed to be bound by the terms and conditions outlined in this Agreement ("Website Terms"). If you do not agree to these Website Terms, please refrain from using this website.
+
+2. User agrees not to use spiders or other "screen scraping" software to collect, extract, reproduce, and/or display any vehicle data from the carcheckup.co.uk website without prior written consent from Milena Software Ltd.
+
+3. All personal data provided by the User will be handled in accordance with the carcheckup.co.uk Privacy Policy.
+
+_ Read more about the [License](https://carcheckup.co.uk/terms-conditions) _
+
+
+## What I Have Learned
+
+In this project I have learned the following things:
+
+* Integrate [Experian API][Experian API-url] to a website.
+* Use [Django][Django-url] to build a website with a admin dashboard.
+* Utilize Django-rest-framework to build a REST API.
+* Integrate [Paypal][Paypal-url] and [Stripe][Stripe-url] payment methods to a website.
+* Style django website with [TailwindCss][Tailwind Css-url].
+* [Docker][Docker-url] deployment.
+* [SEO](SEO-url) optimized Website Content Writing.
+* Teamwork and communication skills.
 
 
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/your_username) - email@example.com
 
-Project Link: [https://github.com/your_username/repo_name](https://github.com/your_username/repo_name)
+If you have any questions, suggestions, project(s), or just want to say hi, **[feel free to reach out to me](mailto:your.email@example.com)**
 
-<p align="right"><a href="#readme-top">⬆️</a></p>
+- [Twitter](https://twitter.com/dembasowfr)
+- [LinkedIn](https://www.linkedin.com/in/demba-sow-95903a22a/)
+- [Github](https://github.com/dembasow98)
+- [Instagram](https://www.instagram.com/dembasowofficial/)
+
+You can also visit my personal website: [dembasow98.github.io](https://dembasow98.github.io/)
 
 
 
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
+I'd like to express my gratitude to the following resources that have been invaluable during the development of this project:
 
-* [Choose an Open Source License](https://choosealicense.com)
-* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
-* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
-* [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
-* [GitHub Pages](https://pages.github.com)
-* [Font Awesome](https://fontawesome.com)
-* [React Icons](https://react-icons.github.io/react-icons/search)
+* [Choose an Open Source License](https://choosealicense.com) - For helping me understand open source licensing and making the right choices.
+* [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet) - For adding a touch of fun and expressiveness to my commit messages and documentation.
+* [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/) - For providing a clear and concise guide to mastering CSS flexbox.
+* [Malven's Grid Cheatsheet](https://grid.malven.co/) - For simplifying the complexities of CSS grid layouts and making them easier to work with.
+* [Img Shields](https://shields.io) - For generating those eye-catching badges that make my project look professional.
+* [GitHub Pages](https://pages.github.com) - For hosting my project's website effortlessly and making it accessible to a wider audience.
+* [Font Awesome](https://fontawesome.com) - For the vast collection of high-quality icons that enhance the visual appeal of my project.
+* [React Icons](https://react-icons.github.io/react-icons/search) - For providing a comprehensive set of icons specifically designed for React applications.
 
-<p align="right"><a href="#readme-top">⬆️</a></p>
+Additionally, I want to acknowledge that this project marked my first experience working with a remote company. It has been an incredibly enriching journey, and I've learned a great deal throughout this experience. I want to thank the team at [Milenna Software](https://milenasoftware.com) and [CarCheckUp](https://carcheckup.co.uk) for giving me the opportunity to work on this project and for their patience and support throughout the process.
 
+Thank you to everyone who contributed directly or indirectly to the success of this project and my professional growth.
+
+
+
+<h3 align="right"><a href="#">⬆️</a></h3>
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=for-the-badge
-[contributors-url]: https://github.com/othneildrew/Best-README-Template/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/othneildrew/Best-README-Template.svg?style=for-the-badge
-[forks-url]: https://github.com/othneildrew/Best-README-Template/network/members
-[stars-shield]: https://img.shields.io/github/stars/othneildrew/Best-README-Template.svg?style=for-the-badge
-[stars-url]: https://github.com/othneildrew/Best-README-Template/stargazers
-[issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=for-the-badge
-[issues-url]: https://github.com/othneildrew/Best-README-Template/issues
-[license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=for-the-badge
-[license-url]: https://github.com/othneildrew/Best-README-Template/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/dembasow98/Best-README-Template.svg?style=for-the-badge
+[contributors-url]: https://github.com/dembasow98/Best-README-Template/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/dembasow98/Best-README-Template.svg?style=for-the-badge
+[forks-url]: https://github.com/dembasow98/Best-README-Template/network/members
+[stars-shield]: https://img.shields.io/github/stars/dembasow98/Best-README-Template.svg?style=for-the-badge
+[stars-url]: https://github.com/dembasow98/Best-README-Template/stargazers
+[issues-shield]: https://img.shields.io/github/issues/dembasow98/Best-README-Template.svg?style=for-the-badge
+[issues-url]: https://github.com/dembasow98/Best-README-Template/issues
+[license-shield]: https://img.shields.io/github/license/dembasow98/Best-README-Template.svg?style=for-the-badge
+[license-url]: https://github.com/dembasow98/Best-README-Template/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[linkedin-url]: https://linkedin.com/in/dembasow98
 [product-screenshot]: images/screenshot.png
 [Next.js]: https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white
 [Next-url]: https://nextjs.org/
@@ -261,3 +244,25 @@ Use this space to list resources you find helpful and would like to give credit 
 [Bootstrap-url]: https://getbootstrap.com
 [JQuery.com]: https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white
 [JQuery-url]: https://jquery.com 
+[Django]: https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white
+[Django-url]: https://www.djangoproject.com/
+[Django-rest-framework]: https://img.shields.io/badge/Django-REST%20Framework-092E20?style=for-the-badge&logo=django&logoColor=white
+[Django-rest-framework-url]: https://www.django-rest-framework.org/
+[CSS]: https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white
+[CSS-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
+[HTML]: https://img.shields.io/badge/HTML-239120?&style=for-the-badge&logo=html5&logoColor=white
+[HTML-url]: https://developer.mozilla.org/en-US/docs/Web/HTML
+[Tailwind Css]: https://img.shields.io/badge/Tailwind%20Css-239120?&style=for-the-badge&logo=tailwind-css&logoColor=white
+[Tailwind Css-url]: https://tailwindcss.com/
+[PostgreSQL]: https://img.shields.io/badge/PostgreSQL-239120?&style=for-the-badge&logo=postgresql&logoColor=white
+[PostgreSQL-url]: https://www.postgresql.org/
+[Docker]: https://img.shields.io/badge/Docker-239120?&style=for-the-badge&logo=docker&logoColor=white
+[Docker-url]: https://www.docker.com/
+[Experian API]: https://img.shields.io/badge/Experian%20API-239120?&style=for-the-badge&logo=experian&logoColor=white
+[Experian API-url]: https://developer.experian.com/
+[Paypal]: https://img.shields.io/badge/Paypal-239120?&style=for-the-badge&logo=paypal&logoColor=white
+[Paypal-url]: https://developer.paypal.com/
+[Stripe]: https://img.shields.io/badge/Stripe-239120?&style=for-the-badge&logo=stripe&logoColor=white
+[Stripe-url]: https://stripe.com/
+[SEO]: https://img.shields.io/badge/SEO-239120?&style=for-the-badge&logo=seo&logoColor=white
+[SEO-url]: https://developers.google.com/search/docs/fundamentals/seo-starter-guide
