@@ -1,3 +1,6 @@
+// import Image from "next/image";
+
+
 const About = () => {
   return (
     <section
@@ -11,7 +14,7 @@ const About = () => {
             <div className="about-me">
               <div className="img">
                 <div className="img-in">
-                  <img src="static/img/about-me.png" title="" alt="" />
+                  <img src="/static/img/personal/home.png" title="Demba Sow Full stack web developer" alt="Demba Sow Full stack web developer" />
                 </div>
               </div>
             </div>
@@ -27,20 +30,17 @@ const About = () => {
                   experience.{" "}
                 </h3>
                 <p>
-                I'm a Computer Engineer experienced in Full Stack Web and Machine Learning Development. 
-                Originally from Mauritania, I've been in Türkiye for 5 years. I had the opportunity to spend a year in Portugal as an Erasmus student
-                and explore various European countries.
-                I'm a freelancer specializing in web development and content writing.
-                I'm also passionate about machine learning and AI. 
-                I speak 7 languages, including Fulani, English, French, Arabic, Turkish, Portuguese, and some Spanish.
-                I'm an inherently curious individual, always eager to acquire new knowledge and expand my network by meeting diverse people. 
-                My strong work ethic drives me to constantly seek self-improvement. 
-                I'm ambitious and driven by significant dreams, which I'm tirelessly working towards accomplishing.
+                {`I'm`} a Computer Engineer experienced in Full Stack Web Development and Machine Learning. Originally from Mauritania, 
+                {`I've`} spent 5 years in Turkey and a year in Portugal during an Erasmus exchange. I work as a freelancer specializing 
+                in web development and content writing, and {`I'm`} passionate about AI and machine learning. I speark 7 languages, 
+                including Fulani, English, French, Arabic, Turkish, Portuguese, and some Spanish.
+                {`I'm`} a naturally curious individual constantly seeking self-improvement. 
+                My strong work ethic fuels my ambition to achieve significant goals.
                 </p>
                 <div className="row">
                   <div className="col-auto">
                     <div className="media align-items-center">
-                      <span className="count">5k</span>
+                      <span className="count">32</span>
                       <div className="media-body">
                         Projects <br />
                         Completed.
@@ -49,7 +49,7 @@ const About = () => {
                   </div>
                   <div className="col-auto">
                     <div className="media align-items-center">
-                      <span className="count">3k</span>
+                      <span className="count">25</span>
                       <div className="media-body">
                         Satisfied <br />
                         Clients.
@@ -58,10 +58,10 @@ const About = () => {
                   </div>
                 </div>
                 <div className="btn-bar">
-                  <a className="px-btn px-btn-theme" href="#">
+                  <a className="px-btn px-btn-theme" href="#contactus">
                     <span>Contact Me</span>
                   </a>
-                  <a className="px-btn px-btn-theme" href="#">
+                  <a className="px-btn px-btn-theme" href="#work">
                     <span>Portfolio</span>
                   </a>
                 </div>
@@ -79,7 +79,7 @@ const About = () => {
               <li>
                 <span>2017 - 2018</span>
                 <h6>Turkiye Maarif Foundation High School - Mauritania</h6>
-                <p> Maths & Biology Degree </p>
+                <p> Maths &amp; Biology Degree </p>
               </li>
               <li>
                 <span>2019-2023</span>
@@ -88,54 +88,55 @@ const About = () => {
               </li>
               <li>
                 <span>2021-2022</span>
-                <h6>Engenharia de Computação - Erasmus+ EU Students Exchange Program</h6>
+                <h6>Computer Engineering - Erasmus+ EU Students Exchange Program</h6>
                 <p>Polytechnic Institute of Viana do Castelo - IPVC</p>
               </li>
-              
-              
             </ul>
           </div>
           <div className="col-lg-7 ml-auto m-15px-tb">
             <div className="skills-box">
               <h3>My skills</h3>
               <p>
-                {`I'm`} a Freelancer Front-end Developer with over 3 years of
-                experience. I code and create web elements for amazing people
-                around the world. I like work with new people. New people new
+                {`I'm`} a Computer Engineer, Expertise Full Stack Web Development with over 3 years of
+                experience. I have been Freelancing for the last 2 years. I code and create web elements for amazing people
+                around the world. I like to work with new people. New people new
                 Experiences.
               </p>
+              
+              {/* /skill */}
               <div className="skill-lt">
-                <h6>HTML5</h6>
+                <h6>Web Development</h6>
                 <div className="skill-bar">
-                  <div className="skill-bar-in" style={{ width: "92%" }}>
-                    <span data-toggle="tooltip" title="92%" />
+                  <div className="skill-bar-in" style={{ width: "98%" }}>
+                    <span data-toggle="tooltip" title="98%" />
                   </div>
                 </div>
               </div>
               {/* /skill */}
               <div className="skill-lt">
-                <h6>WordPress</h6>
+                <h6>AI & Machine Learning</h6>
                 <div className="skill-bar">
-                  <div className="skill-bar-in" style={{ width: "72%" }}>
-                    <span data-toggle="tooltip" title="72%" />
+                  <div className="skill-bar-in" style={{ width: "95%" }}>
+                    <span data-toggle="tooltip" title="95%" />
                   </div>
                 </div>
               </div>
               {/* /skill */}
               <div className="skill-lt">
-                <h6>Magento</h6>
+                <h6>Content Writing</h6>
                 <div className="skill-bar">
-                  <div className="skill-bar-in" style={{ width: "86%" }}>
-                    <span data-toggle="tooltip" title="86%" />
+                  <div className="skill-bar-in" style={{ width: "90%" }}>
+                    <span data-toggle="tooltip" title="90%" />
                   </div>
                 </div>
               </div>
               {/* /skill */}
-              <div className="skill-lt">
-                <h6>UI/UX</h6>
+               {/* /skill */}
+               <div className="skill-lt">
+                <h6>Foreign Languages</h6>
                 <div className="skill-bar">
-                  <div className="skill-bar-in" style={{ width: "88%" }}>
-                    <span data-toggle="tooltip" title="88%" />
+                  <div className="skill-bar-in" style={{ width: "85%" }}>
+                    <span data-toggle="tooltip" title="85%" />
                   </div>
                 </div>
               </div>
@@ -152,20 +153,18 @@ const About = () => {
             <div className="row">
               <div className="col-sm-3 col-md-3 col-xl-2">
                 <div className="rb-left">
-                  <img src="static/img/a1.png" title="" alt="" />
+                  <img src="/static/img/experience/carcheckup-logo.png" title="CarCheckUp" alt="CarCheckUp UK based car report provider" />
                 </div>
               </div>
               <div className="col-sm-9 col-md-9 col-xl-10">
                 <div className="rb-right">
-                  <h6>Front-end Developer</h6>
-                  <label>WeLab | Remote | Jan 2019 - Present</label>
-                  <div className="rb-time">Full Time</div>
+                  <h6>Full Stack Developer | Content Writer</h6>
+                  <label>CarCheckUp | Remote | July 2023 - Present</label>
+                  <div className="rb-time">Part Time</div>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor.
+                  I contributed to the development and design of public web applications, backend APIs, and microservices. 
+                  Integrated various APIs, including UK and Experian Data APIs, and implemented REST APIs while ensuring code quality. 
+                  Particularly worked on the SEO improvement of the website and wrote content for the blog.
                   </p>
                 </div>
               </div>
@@ -175,20 +174,17 @@ const About = () => {
             <div className="row">
               <div className="col-sm-3 col-md-3 col-xl-2">
                 <div className="rb-left">
-                  <img src="static/img/a2.png" title="" alt="" />
+                  <img src="/static/img/experience/work3-logo.png" title="Work3 teknoloji a.ş" alt="Work3 teknoloji startup şirketi sakarya university teknokent" />
                 </div>
               </div>
               <div className="col-sm-9 col-md-9 col-xl-10">
                 <div className="rb-right">
-                  <h6>Front-end Developer</h6>
-                  <label>WeLab | Remote | Jan 2019 - Present</label>
-                  <div className="rb-time">Full Time</div>
+                  <h6>AI & Machine Learning Developer</h6>
+                  <label>Work3 Teknoloji a.s | Hybrid | September 2023 - Present</label>
+                  <div className="rb-time">Part Time</div>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor.
+                  Currently, I am interning as an AI and ML developer while simultaneously gaining experience in hardware development.
+                  I am working on a project that involves the development of a hybrid personalized diabetes care system that can be controlled via a mobile application.
                   </p>
                 </div>
               </div>
@@ -198,20 +194,18 @@ const About = () => {
             <div className="row">
               <div className="col-sm-3 col-md-3 col-xl-2">
                 <div className="rb-left">
-                  <img src="static/img/a3.png" title="" alt="" />
+                  <img src="/static/img/experience/sakarya-university-logo.png" title="Sakarya University SAU" alt="Sakarya University Turkiye Public University" />
                 </div>
               </div>
               <div className="col-sm-9 col-md-9 col-xl-10">
                 <div className="rb-right">
-                  <h6>Front-end Developer</h6>
-                  <label>WeLab | Remote | Jan 2019 - Present</label>
+                  <h6>Final Year Computer Engineer Project</h6>
+                  <label>Sakarya University | Hybrid | Jan 2023 - Jun 2023</label>
                   <div className="rb-time">Full Time</div>
                   <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor.
+                    With the help of my supervisor, and a colleague of mine, we worked on Ohara Bookshelf project that was amongst the best Final Year Projects in the Computer Engineering Department.
+                    Ohara bookshelf is a smart books recommendations web application that allows users to create an account, add bookshelves to their library,
+                    fork other {`users`} bookshelves, and get smart books recommendations based on their emotions, preferences and interests.
                   </p>
                 </div>
               </div>
