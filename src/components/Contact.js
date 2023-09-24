@@ -33,7 +33,7 @@ const Contact = () => {
             setMailData({ name: "", email: "", message: "", subject: "" });
           },
           (err) => {
-            console.log(err.text);
+            console.log("An Error Occured!!!", err.text);
           }
         );
     }
