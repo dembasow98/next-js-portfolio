@@ -45,7 +45,7 @@ const Index = ({posts, projects}) => {
                     I teach English to further enhance my social skills and communication abilities.
                   </p>
                   <div className="btn-bar">
-                    <a className="px-btn px-btn-theme" href="resume/DEMBA-SOW_UK_FORMAT.pdf" download>
+                    <a className="px-btn px-btn-theme" href="/static/resume/DEMBASOW-RESUME_UK_FORMAT.pdf" download>
                       Donwload CV
                     </a>
                   </div>
@@ -53,7 +53,7 @@ const Index = ({posts, projects}) => {
               </div>
               <div className="col-lg-6">
                 <div className="hb-img">
-                  <img src="static/img/personal/banner.png" title="Demba Sow Banner" alt="Demba Sow Banner" />
+                  <img src="/static/img/personal/banner.png" title="Demba Sow Banner" alt="Demba Sow Banner" />
                 </div>
               </div>
             </div>
