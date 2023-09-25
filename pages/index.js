@@ -45,7 +45,7 @@ const Index = ({posts, projects}) => {
                     I teach English to further enhance my social skills and communication abilities.
                   </p>
                   <div className="btn-bar">
-                    <a className="px-btn px-btn-theme" href="/static/resume/DEMBASOW-RESUME_UK_FORMAT.pdf" download>
+                    <a className="px-btn px-btn-theme" href="/static/resume/DEMBA SOW RESUME-EUROPASS.pdf" download>
                       Donwload CV
                     </a>
                   </div>
