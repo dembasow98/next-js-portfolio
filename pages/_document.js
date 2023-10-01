@@ -1,13 +1,26 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Script from 'next/script'
 
 class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
         <Head>
+          {/* Google Tag Manager */}
+          <Script src="https://www.googletagmanager.com/gtag/js?id=GGTM-NK4W4ZNX" />
+          <Script id="google-analytics">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'GTM-NK4W4ZNX');
+            `}
+          </Script>
+          {/* End Google Tag Manager */}
           <meta charSet="utf-8" />
           {/* Google verification*/}
           <meta name="google-site-verification" content="pxB6DwSAwvFZQnbYbDbIk32KMnVaC92Hk-PXfAr976s" />
+          
           <link rel="icon" href="/home.png"/>
           {/* Include your stylesheets here */}
           <link
@@ -50,6 +63,8 @@ class MyDocument extends Document {
           <Main />
           <NextScript />
         </body>
+        
+
       </Html>
     );
   }

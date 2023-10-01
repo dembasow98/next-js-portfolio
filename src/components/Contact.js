@@ -155,10 +155,11 @@ const Contact = () => {
                     <div className="col-md-6 ">
                       {/* ReCAPTCHA */}
                       <ReCAPTCHA
+                        id = "google-captcha"
                         theme="dark"
                         sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
                         onChange={(value) => setCaptchaValue(value)}
-                        className={`${error ? (captchaValue ? 'invalid' : '') : ''}`}
+                        className={`google-captcha ${error ? (captchaValue ? 'invalid' : '') : ''}`}
                       />
                     </div>
                     <div className="col-md-6 d-flex flex-column">
