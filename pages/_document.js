@@ -6,6 +6,8 @@ class MyDocument extends Document {
       <Html lang="en">
         <Head>
           <meta charSet="utf-8" />
+          {/* Google verification*/}
+          <meta name="google-site-verification" content="pxB6DwSAwvFZQnbYbDbIk32KMnVaC92Hk-PXfAr976s" />
           <link rel="icon" href="/home.png"/>
           {/* Include your stylesheets here */}
           <link
