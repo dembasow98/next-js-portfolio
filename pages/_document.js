@@ -20,7 +20,11 @@ class MyDocument extends Document {
           <meta charSet="utf-8" />
           {/* Google verification*/}
           <meta name="google-site-verification" content="pxB6DwSAwvFZQnbYbDbIk32KMnVaC92Hk-PXfAr976s" />
+          {/*Progressive Web App */}
+          <meta name="theme-color"></meta>
           
+          <link rel="apple-touch-icon" sizes="192x192" href="/home.ng"/>
+
           <link rel="icon" href="/home.png"/>
           {/* Include your stylesheets here */}
           <link

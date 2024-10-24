@@ -37,16 +37,16 @@ const Index = ({posts, projects}) => {
                     A Passionate <TypingAnimation />
                   </p>
                   <p className="desc">
-                    {`I'm`} a recent computer engineering graduate with a strong passion for Full Stack Web Development 
-                    and some experience in Machine Learning and AI. I write website content sometime.
-                    My insatiable curiosity has driven me to learn 7 languages, 
-                    including Fulani, English, French, Arabic, Turkish, Portuguese, and some Spanish,
-                    enabling  me to connect with people from diverse cultures. I enjoy writing and, in my free time, 
-                    I teach English to further enhance my social skills and communication abilities.
+                    {`I'm`} a Recent Computer Engineer Graduate From Sakarya University. Proficient in Python, C++ and robust in JavaScript Frameworks Such as Next.js, Node.js and Express.js. With over 2 years of experience in AI,
+                     and machine learning, good in software engineering. I am Enthusiastic about LLM, Generative AI, NLP and Skilled in designing and implementing AI models, including data preparation, labelling, model training, and testing. 
+                     Experienced in image processing, natural language processing, computer vision, and clean code principles using OOP design patterns. 
+                     Culturally diverse with a background as President of the Mauritanian Student Federation, an Erasmus exchange student for 2 semesters & Erasmus+ Internship for 3 months, now I serve as Türkiye Maarif Foundation Student Graduate Leader. 
+                     Seeking opportunities to leverage my expertise in developing scalable machine learning solutions to solve complex problems in industry. 
+                     Currently Enrolled as AI & Data Science Masters Student & Teaching Assistant at Özyeğin University.
                   </p>
                   <div className="btn-bar">
-                    <a className="px-btn px-btn-theme" href="/static/resume/DEMBA-SOW-NOVORESUME-WITH-IMAGE.pdf" download>
-                      Donwload CV
+                    <a className="px-btn px-btn-theme" href="/static/resume/demba-sow-junior-machine-learning-engineer.pdf" download>
+                      Donwload my CV
                     </a>
                   </div>
                 </div>
