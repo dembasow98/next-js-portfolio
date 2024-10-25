@@ -37,12 +37,9 @@ const Index = ({posts, projects}) => {
                     A Passionate <TypingAnimation />
                   </p>
                   <p className="desc">
-                    {`I'm`} a Recent Computer Engineer Graduate From Sakarya University. Proficient in Python, C++ and robust in JavaScript Frameworks Such as Next.js, Node.js and Express.js. With over 2 years of experience in AI,
-                     and machine learning, good in software engineering. I am Enthusiastic about LLM, Generative AI, NLP and Skilled in designing and implementing AI models, including data preparation, labelling, model training, and testing. 
-                     Experienced in image processing, natural language processing, computer vision, and clean code principles using OOP design patterns. 
-                     Culturally diverse with a background as President of the Mauritanian Student Federation, an Erasmus exchange student for 2 semesters & Erasmus+ Internship for 3 months, now I serve as Türkiye Maarif Foundation Student Graduate Leader. 
-                     Seeking opportunities to leverage my expertise in developing scalable machine learning solutions to solve complex problems in industry. 
-                     Currently Enrolled as AI & Data Science Masters Student & Teaching Assistant at Özyeğin University.
+                    I am a junior machine learning engineer, computer Engineer Graduate @ Sakarya University Currently Enrolled in Data Science Masters @ Özyeğin University.
+                    I am currently looking for a full-time junior position as a machine learning engineer or data scientist where I can apply my skills and knowledge.
+                    I am also open to freelance opportunities. Feel free to contact me if you have any questions or opportunities.
                   </p>
                   <div className="btn-bar">
                     <a className="px-btn px-btn-theme" href="/static/resume/demba-sow-junior-machine-learning-engineer.pdf" download>

@@ -7,9 +7,9 @@ const TypingAnimation = () => {
   useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        '<span style="color: #2fbf71;">Computer Engineer</span>',
-        '<span style="color: #2fbf71;">Full Stack Web Developer</span>',
-        '<span style="color: #2fbf71;">Machine Learning Developer</span>',
+        '<span style="color: #2fbf71;">Computer Engineer @ Sakarya University</span>',
+        '<span style="color: #2fbf71;">Machine Learning Engineer</span>',
+        '<span style="color: #2fbf71;">Data Science Masters @ Özyeğin University</span>',
         '<span style="color: #2fbf71;">Freelancer</span>',
         '<span style="color: #2fbf71;">Content Writer</span>',
         '<span style="color: #2fbf71;">Polyglot</span>'
