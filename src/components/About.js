@@ -36,20 +36,20 @@ const About = () => {
                 <h3>
                   {`I'm`} Junior Machine Learning Engineer{" "}
                 </h3>
-                  <p>
+                 <p>
                     I am a recent Computer Engineering graduate from Sakarya University, skilled in Python, C++, and JavaScript frameworks like Next.js, Node.js, and Express.js. 
                     With over two years of experience in AI and machine learning, I specialize in LLMs, generative AI, NLP, image processing, and computer vision, while adhering to clean code practices and OOP design principles.
                     
-                    I’ve led the Mauritanian Student Federation at my university for two years and participated in Erasmus for two semesters, including completing an Erasmus+ internship. 
-                    Currently, I serve as a Student Graduate Leader at the Türkiye Maarif Foundation and am pursuing a Master’s in AI & Data Science at Özyeğin University, where I also work as a Teaching Assistant.
+                    I have led the Mauritanian Student Federation at my university for two years and participated in Erasmus for two semesters, including completing an Erasmus+ internship. 
+                    Currently, I serve as a Student Graduate Leader at the Türkiye Maarif Foundation and am pursuing a Master&apos;s in AI & Data Science at Özyeğin University, where I also work as a Teaching Assistant.
 
-                    In my free time, I work on my ongoing research project, 'Optic Exam Reader,' where I aim to build a revolutionary system capable of extracting full information from any type of OCR exam paper simply
-                     by taking a photo—without prior knowledge of the paper’s structure or template. This project builds upon existing work by multiple researchers and seeks to push the boundaries of OCR technology.
+                    In my free time, I work on my ongoing research project, &apos;Optic Exam Reader,&apos; where I aim to build a revolutionary system capable of extracting full information from any type of OCR exam paper simply
+                    by taking a photo—without prior knowledge of the paper&apos;s structure or template. This project builds upon existing work by multiple researchers and seeks to push the boundaries of OCR technology.
 
                     Beyond my academic and professional endeavors, mentoring is a personal passion. On platforms like Superprof and Preply,
-                     I’ve helped hundreds of students learn English and French, and supported many in preparing for TOEFL, IELTS exams, and job interviews. 
-                     Fluent in six languages, including English, French, Turkish, Arabic, Portuguese and Fulani, I’m currently improving my Spanish and learning Italian. 
-                     Mentoring brings me great fulfillment, as I enjoy helping others succeed.
+                    I have helped hundreds of students learn English and French, and supported many in preparing for TOEFL, IELTS exams, and job interviews. 
+                    Fluent in six languages, including English, French, Turkish, Arabic, Portuguese, and Fulani, I am currently improving my Spanish and learning Italian. 
+                    Mentoring brings me great fulfillment, as I enjoy helping others succeed.
                   </p>
                 <div className="row">
                   <div className="col-auto">

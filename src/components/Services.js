@@ -24,13 +24,13 @@ const Services = () => {
             <img className="theme-bg" src="/static/img/services/machine-learning.png" alt="Demba Sow Full stack web developer" />
               <div className="feature-content media-body">
                 <h5>AI & Machine Learning </h5>
-                <p>
-                I specialize in developing innovative machine learning algorithms and AI solutions tailored to real-world challenges. 
-                With hands-on experience in frameworks such as TensorFlow and scikit-learn, 
-                I focus on creating models that tackle real-world problems. 
-                Currently, I'm working on a groundbreaking project, 'Optic Exam Reader,' aimed at revolutionizing OCR 
-                technology by extracting comprehensive information from exam papers simply by taking a photo, without prior knowledge of their structure.
-                </p>
+                  <p>
+                    I specialize in developing innovative machine learning algorithms and AI solutions tailored to real-world challenges. 
+                    With hands-on experience in frameworks such as TensorFlow and scikit-learn, 
+                    I focus on creating models that tackle real-world problems. 
+                    Currently, I&apos;m working on a groundbreaking project, <em>Optic Exam Reader</em>, aimed at revolutionizing OCR 
+                    technology by extracting comprehensive information from exam papers simply by taking a photo, without prior knowledge of their structure.
+                  </p>
               </div>
             </div>
           </div>
