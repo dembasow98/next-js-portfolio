@@ -38,9 +38,9 @@ const Index = ({posts, projects}) => {
                     A Passionate <TypingAnimation />
                   </p>
                   <p className="desc">
-                    I am a highly passionate junior machine learning engineer, computer Engineer Graduate @ Sakarya University Currently Enrolled in Data Science Masters @Özyeğin University.
-                    I am on the lookout for a full-time junior role in machine learning or data science where I can put my skills to work—and perhaps discover new ones along the way.
-                    Let's team up, turn some data into magic, and take your projects to the next level!
+                    I am a highly passionate junior machine learning engineer, Computer Engineering Graduate from Sakarya University, currently enrolled in a Data Science Master&apos;s program at Özyeğin University.
+                    Currently open for a full-time junior role in machine learning or data science where I can put my skills to work—and perhaps discover new ones along the way.
+                    Let&apos;s team up, turn some data into magic, and take your projects to the next level!
                   </p>
                   <div className="btn-bar">
                     <a className="px-btn px-btn-theme" href="/static/resume/demba-sow-junior-machine-learning-engineer.pdf" download>
