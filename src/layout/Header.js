@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Fragment, useEffect, useState } from "react";
 import { activeSection } from "../utilits";
 
+
 const Header = ({ blog, projects }) => {
   
   const [sideBarToggle, setSideBarToggle] = useState(false);
@@ -16,7 +17,7 @@ const Header = ({ blog, projects }) => {
         <div className="d-flex">
           <div className="navbar-brand">
             <Link href="/">
-              <a className="logo-text">DEMBA SOW</a>
+            <a className="logo-text">DEMBA SOW</a>
             </Link>
           </div>
           <button
@@ -39,11 +40,11 @@ const Header = ({ blog, projects }) => {
         <div className="scroll-bar">
           <div className="hl-top">
             <div className="hl-logo">
-              <Link className="cursor" href="/">
+              <a className="nav-link" href="#home"> 
                 <div className="img">
-                  <img src="/static/img/personal/icon.png" title="Demba sow home page icon" alt="Demba Sow Full stack web developer" />
+                  <img src="/static/img/personal/icon.png" title="Demba sow the 🐐" alt="Demba Sow Machine Learning Engineer" />
                 </div>
-              </Link>
+              </a>
               <h5>DEMBA SOW</h5>
             </div>
           </div>
