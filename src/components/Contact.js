@@ -79,7 +79,7 @@ const Contact = () => {
                 <li className="media">
                   <i className="ti-map" />
                   <span className="media-body">
-                    Kemalpaşa Mahallesi, 704. Sk., No:1, 54050 Serdivan/Sakarya
+                    Çamlık Mahallesi, Başak Sokak, No: 8, Çekmeköy, Istanbul, Turkiye
                   </span>
                 </li>
                 <li className="media">

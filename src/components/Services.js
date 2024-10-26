@@ -26,7 +26,7 @@ const Services = () => {
                 <h5>AI & Machine Learning </h5>
                   <p>
                     I specialize in developing innovative machine learning algorithms and AI solutions tailored to real-world challenges. 
-                    With hands-on experience in frameworks such as TensorFlow and scikit-learn, 
+                    With hands-on experience in frameworks such as TensorFlow, PyTorch, Keras and Scikit-learn, 
                     I focus on creating models that tackle real-world problems. 
                     Currently, I&apos;m working on a groundbreaking project, <em>Optic Exam Reader</em>, aimed at revolutionizing OCR 
                     technology by extracting comprehensive information from exam papers simply by taking a photo, without prior knowledge of their structure.
