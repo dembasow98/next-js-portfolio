@@ -1,13 +1,21 @@
 // import Image from "next/image";
-
+import { useEffect, useState } from 'react';
 
 const About = () => {
+
+  const [clientOnly, setClientOnly] = useState(false);
+
+  useEffect(() => {
+    setClientOnly(true);
+  }, []);
+  
   return (
     <section
       id="about"
       data-nav-tooltip="About"
       className="pp-section pp-scrollable section counter"
     >
+      {clientOnly && (
       <div className="container">
         <div className="row align-items-center justify-content-center">
           <div className="col-lg-6 m-15px-tb">
@@ -367,7 +375,10 @@ const About = () => {
           </div>
         </div>
       </div>
+      
+      )}
     </section>
   );
 };
+
 export default About;

@@ -17,6 +17,8 @@ import path from "path";
 import matter from "gray-matter";
 
 const Index = ({posts, projects}) => {
+
+  
   return (
     <Layout>
       <section
