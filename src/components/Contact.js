@@ -1,30 +1,24 @@
 import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
 import ReCAPTCHA from 'react-google-recaptcha';
 
 const Contact = () => {
-  
-  const [captchaValue, setCaptchaValue] = useState(null);
-
   const [mailData, setMailData] = useState({
     from_name: '',
     from_email: '',
     subject: '',
     message: '',
-    captchaValue:''
   });
 
   const { from_name, from_email, message, subject } = mailData;
   const [error, setError] = useState(null);
+  const [captchaValue, setCaptchaValue] = useState(null);
+  const [success, setSuccess] = useState(null);
 
   const onChange = (e) => setMailData({ ...mailData, [e.target.name]: e.target.value });
 
-
-
-  const onSubmit = (e) => {
-
+  const onSubmit = async (e) => {
     e.preventDefault();
-    
+
     if (
       from_name.length === 0 ||
       from_email.length === 0 ||
@@ -32,27 +26,30 @@ const Contact = () => {
       subject.length === 0 ||
       captchaValue === null
     ) {
-      // Captcha can not be empty error
       setError(true);
       clearError();
     } else {
-      emailjs
-        .send(
-          process.env.NEXT_PUBLIC_SERVICE_ID,
-          process.env.NEXT_PUBLIC_TEMPLATE_ID,
-          mailData,
-          process.env.NEXT_PUBLIC_PUBLIC_KEY
-        )
-        .then(
-          (response) => {
-            setError(false);
-            clearError();
-            setMailData({ from_name: '', from_email: '', subject: '', message: '', captchaValue: '' });
+      try {
+        const res = await fetch('/api/send-email', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
           },
-          (err) => {
-            console.log('An Error Occurred!!!', err.text);
-          }
-        );
+          body: JSON.stringify(mailData),
+        });
+
+        const result = await res.json();
+
+        if (result.success) {
+          setSuccess(true);
+          setMailData({ from_name: '', from_email: '', subject: '', message: '' });
+        } else {
+          setSuccess(false);
+        }
+      } catch (error) {
+        console.error('An Error Occurred!!!', error);
+        setSuccess(false);
+      }
     }
   };
 
@@ -96,13 +93,13 @@ const Contact = () => {
           <div className="col-lg-7 col-xl-8 m-15px-tb">
             <div className="contact-form">
               <h4>Say Something</h4>
-              <form id="contact-form" onSubmit={(e) => onSubmit(e)}>
+              <form id="contact-form" onSubmit={onSubmit}>
                 <div className="row">
                   <div className="col-md-6">
                     <div className="form-group">
                       <input
                         name="from_name"
-                        onChange={(e) => onChange(e)}
+                        onChange={onChange}
                         value={from_name}
                         id="name"
                         placeholder="Name *"
@@ -115,7 +112,7 @@ const Contact = () => {
                     <div className="form-group">
                       <input
                         name="from_email"
-                        onChange={(e) => onChange(e)}
+                        onChange={onChange}
                         value={from_email}
                         id="email"
                         placeholder="Email *"
@@ -128,7 +125,7 @@ const Contact = () => {
                     <div className="form-group">
                       <input
                         name="subject"
-                        onChange={(e) => onChange(e)}
+                        onChange={onChange}
                         value={subject}
                         id="subject"
                         placeholder="Subject *"
@@ -141,7 +138,7 @@ const Contact = () => {
                     <div className="form-group">
                       <textarea
                         name="message"
-                        onChange={(e) => onChange(e)}
+                        onChange={onChange}
                         value={message}
                         id="message"
                         placeholder="Your message *"
@@ -155,7 +152,7 @@ const Contact = () => {
                     <div className="col-md-6 ">
                       {/* ReCAPTCHA */}
                       <ReCAPTCHA
-                        id = "google-captcha"
+                        id="google-captcha"
                         theme="dark"
                         sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
                         onChange={(value) => setCaptchaValue(value)}
@@ -174,48 +171,20 @@ const Contact = () => {
                             id="suce_message"
                             className="text-success"
                             style={{
-                              display: error !== null ? (!error ? 'block' : 'none') : 'none',
+                              display: success !== null ? (success ? 'block' : 'none') : 'none',
                             }}
                           >
                             Message Sent Successfully!!!
                           </span>
-                          <span id="err_message" className="text-danger" style={{ display: 'none' }}>
-                            Message Sending Failed
+                          <span id="err_message" className="text-danger" style={{ display: success === false ? 'block' : 'none' }}>
+                            Feature Currently Unavailable!😕
+                            Please Contact me via Email or Phone Number.🙏🏽
                           </span>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  {/* <div className="d-flex md:col justify-content-between align-items-center">
-                    <div>
-                     
-                      <ReCAPTCHA
-                        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
-                        onChange={(value) => setCaptchaValue(value)}
-                        className={`${error ? (captchaValue ? 'invalid' : '') : ''}`}
-                      />
-                    </div>
-                    <div>
-                      <div className="send">
-                        <input className="px-btn px-btn-theme" type="submit" value="send message" />
-                      </div>
-                      <div className="d-flex mx-4 my-2">
-                        <span
-                          id="suce_message"
-                          className="text-success"
-                          style={{
-                            display: error !== null ? (!error ? 'block' : 'none') : 'none',
-                          }}
-                        >
-                          Message Sent Successfully!!!
-                        </span>
-                        <span id="err_message" className="text-danger" style={{ display: 'none' }}>
-                          Message Sending Failed
-                        </span>
-                      </div>
-                    </div>
-                  </div> */}
                 </div>
               </form>
             </div>
@@ -223,9 +192,8 @@ const Contact = () => {
           <div className="col-12">
             <div className="google-map">
               <div className="embed-responsive embed-responsive-21by9">
-             
                 <iframe
-                  src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96250.2436630593!2d29.187350576576875!3d41.072924568226775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cad2e51ddddf97%3A0xee27abe63246e12a!2zw4dla21la8O2eS_EsHN0YW5idWw!5e0!3m2!1sen!2str!4v1729957958300!5m2!1sen!2str"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96250.2436630593!2d29.187350576576875!3d41.072924568226775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cad2e51ddddf97%3A0xee27abe63246e12a!2zw4dla21la8O2eS_EsHN0YW5s!5e0!3m2!1sen!2str!4v1729957958300!5m2!1sen!2str"
                   allowFullScreen=""
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
@@ -235,7 +203,6 @@ const Contact = () => {
           </div>
         </div>
       </div>
-     
     </section>
   );
 };
