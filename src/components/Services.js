@@ -42,7 +42,7 @@ const Services = () => {
                 <h5>Software Engineering & SEO</h5>
                 <p>
                 I am passionate about building dynamic, user-friendly web applications that meet client needs and enhance user experience. 
-                Proficient in HTML5, CSS3, Tailwindcss, and frameworks like Next.js and Node.js, I develop responsive designs that function seamlessly across devices. 
+                Proficient in HTML5, CSS3, Tailwindcss, and frameworks like Next.js, Django, Express.js and Node.js, I develop responsive designs that function seamlessly across devices. 
                 Alongside web development, I write SEO-optimized content and implement strategies to boost online visibility, helping businesses improve their rankings on search engines. 
                 My approach combines technical expertise with creative solutions to ensure websites are both functional and engaging.
                 </p>              
