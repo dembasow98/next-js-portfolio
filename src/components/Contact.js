@@ -223,8 +223,9 @@ const Contact = () => {
           <div className="col-12">
             <div className="google-map">
               <div className="embed-responsive embed-responsive-21by9">
+             
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d11747.10911186441!2d30.33000364171304!3d40.743736650501646!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1ssakarya%20university!5e0!3m2!1sen!2str!4v1695199501597!5m2!1sen!2str"
+                  src = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96250.2436630593!2d29.187350576576875!3d41.072924568226775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cad2e51ddddf97%3A0xee27abe63246e12a!2zw4dla21la8O2eS_EsHN0YW5idWw!5e0!3m2!1sen!2str!4v1729957958300!5m2!1sen!2str"
                   allowFullScreen=""
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
