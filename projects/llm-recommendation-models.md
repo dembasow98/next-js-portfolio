@@ -2,10 +2,10 @@
 title: "Recommender System Project"
 date: "02 OCTOBER 2024"
 banner: "/static/img/portfolio/llm-recommendation-systems/llm-image.png"
-categories: [AI, MACHINE LEARNING, GENERATIVE AI, CHATBOT, LLM, LLAMA 2]
-tags: [Python, Streamlit, Replicate, Chatbot, Llama 2]
-description: "Llama 2 chatbot in Python using Streamlit for the frontend, while hosting the model on Replicate for the backend."
-github: "https://github.com/dembasowfr/LLama2-chat-app-streamlit"
+categories: [AI, MACHINE LEARNING, RECOMMENDER SYSTEMS, GENERATIVE MODELS, LLMS]
+tags: [Python, Recommendation Systems, Large Language Models]
+description: "A project demonstrating a recommendation system using traditional, hybrid, and LLM-based approaches."
+github: "https://github.com/dembasowfr/Recommender-system-with-LLM"
 ---
 
 # Overview
