@@ -48,6 +48,10 @@ body.theme-light {
 */
 
 
+.pointer-cursor {
+  cursor: pointer;
+}
+
 .font-alt {
   font-family: "Rubik", serif;
 }

@@ -76,4 +76,6 @@ Feel free to reach out to me via the following:
 
 
 - **LinkedIn:** [Demba Sow](https://linkedin.com/in/dembasowmr)
-- **GitHub:** [@demba-sow](https://github.com/dembasowfr)
+- **GitHub:** [@dembasowfr](https://github.com/dembasowfr)
+- **Email:** [ [email protected]](mailto:dastech1998@gmail.com)
+
