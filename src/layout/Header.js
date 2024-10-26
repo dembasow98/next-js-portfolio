@@ -58,7 +58,7 @@ const Header = ({ blog, projects }) => {
           )}
         </div>
         <div className="nav justify-content-center social-icons">
-          <a href="https://github.com/dembasow98">
+          <a href="https://github.com/dembasowfr">
             <i className="fab fa-github" />
           </a>
           <a href="https://www.facebook.com/iamDembaAbdullaahiSow/">
@@ -67,10 +67,10 @@ const Header = ({ blog, projects }) => {
           <a href="https://twitter.com/dembasowfr">
             <i className="fab fa-twitter" />
           </a>
-          <a href="https://www.instagram.com/dembasowofficial/">
+          <a href="https://www.instagram.com/greatnessinconstruction/">
             <i className="fab fa-instagram" />
           </a>
-          <a href="https://www.linkedin.com/in/demba-sow-95903a22a/">
+          <a href="https://www.linkedin.com/in/dembasowmr/">
             <i className="fab fa-linkedin-in" />
           </a>
          

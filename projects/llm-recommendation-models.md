@@ -4,7 +4,7 @@ date: "02 OCTOBER 2024"
 banner: "/static/img/portfolio/llm-recommendation-systems/llm-image.png"
 categories: [AI, MACHINE LEARNING, RECOMMENDER SYSTEMS, GENERATIVE MODELS, LLMS]
 tags: [Python, Recommendation Systems, Large Language Models]
-description: "A project demonstrating a recommendation system using traditional, hybrid, and LLM-based approaches."
+description: "A recommendation system using traditional, hybrid, and LLM-based approaches."
 github: "https://github.com/dembasowfr/Recommender-system-with-LLM"
 ---
 
