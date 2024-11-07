@@ -85,19 +85,20 @@ const Portfolio = ({ projects }) => {
               ALL
             </li>
             <li
-              className={`c-pointer ${activeBtn("web-development")}`}
-              onClick={handleFilterKeyChange("web-development")}
-              data-filter=".web-development"
-            >
-              WEB DEVELOPMENT
-            </li>
-            <li
               className={`c-pointer ${activeBtn("machine-learning")}`}
               onClick={handleFilterKeyChange("machine-learning")}
               data-filter=".machine-learning"
             >
               AI & MACHINE LEARNING
             </li>
+            <li
+              className={`c-pointer ${activeBtn("web-development")}`}
+              onClick={handleFilterKeyChange("web-development")}
+              data-filter=".web-development"
+            >
+              WEB DEVELOPMENT
+            </li>
+           
             <li
               className={`c-pointer ${activeBtn("content-writing")}`}
               onClick={handleFilterKeyChange("content-writing")}
