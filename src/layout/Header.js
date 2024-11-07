@@ -74,7 +74,9 @@ const Header = ({ blog, projects }) => {
           <a href="https://www.linkedin.com/in/dembasowmr/">
             <i className="fab fa-linkedin-in" />
           </a>
-         
+          <a href="https://medium.com/@dembasow">
+            <i className="fab fa-medium"/>
+          </a>
         </div>
       </header>
     </Fragment>
