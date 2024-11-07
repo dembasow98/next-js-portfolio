@@ -177,8 +177,7 @@ const Contact = () => {
                             Message Sent Successfully!!!
                           </span>
                           <span id="err_message" className="text-danger" style={{ display: success === false ? 'block' : 'none' }}>
-                            Feature Currently Unavailable!😕
-                            Please Contact me via Email or Phone Number.🙏🏽
+                            Feature Currently Unavailable!😕Please Contact me via Email or Phone Number.🙏🏽 
                           </span>
                         </div>
                       </div>
@@ -189,6 +188,7 @@ const Contact = () => {
               </form>
             </div>
           </div>
+          {/* Maps Location*/}
           <div className="col-12">
             <div className="google-map">
               <div className="embed-responsive embed-responsive-21by9">

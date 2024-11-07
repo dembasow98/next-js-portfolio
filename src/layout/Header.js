@@ -77,8 +77,6 @@ const Header = ({ blog, projects }) => {
           <a href="https://medium.com/@dembasow">
             <i className="fab fa-medium"/>
           </a>
-          
-         
         </div>
       </header>
     </Fragment>

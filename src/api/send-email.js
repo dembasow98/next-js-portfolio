@@ -1,30 +1,24 @@
-import nodemailer from 'nodemailer';
+import { Resend } from 'resend';
+
+const resend = new Resend(process.env.NEXT_RESEND_API_KEY);
 
 export default async function handler(req, res) {
+
   if (req.method === 'POST') {
     const { from_name, from_email, subject, message } = req.body;
 
-    const transporter = nodemailer.createTransport({
-      host: process.env.NEXT_SMTP_SERVER_HOST,
-      port: 587,
-      auth: {
-        user: process.env.NEXT_SMTP_SERVER_USERNAME,
-        pass: process.env.NEXT_SMTP_SERVER_PASSWORD,
-      },
-    });
-
-    const mailOptions = {
+    const email = {
       from: from_email,
       to: process.env.NEXT_SITE_MAIL_RECIEVER,
       subject: subject,
-      text: `Name: ${from_name}\nEmail: ${from_email}\n Subject: ${subject}\n\nMessage:\n${message}`,
+      text: `Name: ${from_name}\nEmail: ${from_email}\n\nMessage:\n${message}`,
     };
 
     try {
-      await transporter.sendMail(mailOptions);
+      await resend.send(email);
       res.status(200).json({ success: true });
     } catch (error) {
-      console.error(error);
+      console.error('Error sending email: ', error);
       res.status(500).json({ success: false, error: 'Failed to send email' });
     }
   } else {
